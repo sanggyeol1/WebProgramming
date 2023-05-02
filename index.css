@@ -1,0 +1,219 @@
+.title-table td{
+    width : 9%;
+}
+
+.top-box{
+    width : 760px;
+}
+.main-title{
+    color: black;
+    text-decoration: none;
+    font-family :'Times New Roman', Times, serif;
+    text-shadow : 3px 3px 5px black;
+    font-size: 44px;
+}
+
+.sign-in{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    
+    font-size: 20px;
+}
+.sign-in:hover{
+    text-shadow : 3px 3px 5px black;
+}
+.sign-up{
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    
+    font-size: 20px;
+}
+.sign-up:hover{
+    text-shadow : 3px 3px 5px black;
+}
+
+.top-bar{
+    box-shadow: 0px 0px 3px black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    
+
+}
+
+header{
+    width : 760px;
+    height: 80px;
+    font-size: 30px;
+    
+}
+
+.concrete-title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width : 1100px;
+}
+
+
+body{
+    background-color: linen;
+    
+    margin-left: 7%;
+    margin-right: 9%;
+    max-width: 1100px;
+    min-width: 1100px;
+}
+
+aside{
+    float: left;
+    border-color: black;
+    width: 148px;
+    height: 800px ;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px midnightblue;
+    
+}
+.leage-image{
+    margin-left: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.leage-image:hover{
+    box-shadow: 0px 0px 5px black;
+
+}
+
+.aside-list{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.aside-league:hover{
+    text-shadow : 3px 3px 5px black;
+    cursor: pointer;
+}
+.aside-player:hover{
+    text-shadow : 3px 3px 5px black;
+    cursor: pointer;
+}
+
+section{
+    float: left;
+    width: 605px;
+    height: 800px;
+    background-image: url("https://github.com/sanggyeol1/sanggyeol1.github.io/blob/main/%EC%9C%A0%EB%9F%BD%20%EC%A7%80%EB%8F%84.png?raw=true");
+    background-repeat: no-repeat; 
+    background-size:contain;
+    box-shadow: 0px 0px 3px midnightblue;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+.map-table{
+    width: 100%;
+    height: 62%;
+    
+}
+.table-epl{
+    background-image: url("epl.png");
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.table-epl:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.table-laliga{
+    background-image: url("laliga.png");
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.table-laliga:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.table-bundes{
+    background-image: url("bundes.png");
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.table-bundes:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.table-serie{
+    background-image: url("serie.png");
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.table-serie:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.table-greece{
+    background-image: url("greece.jpg");
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.table-greece:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.table-scotish{
+    background-image: url("scotish.jpg");
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.table-scotish:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+.news-table{
+    width: 100%;
+    height: 36%;
+    text-align: center;
+}
+.news-caption{
+    background-color: linen;
+    width: 605px;
+    font-size: 20px;
+    
+}
+
+.nav-box{
+    width: 330px;
+    height: 500px;
+    float: left;
+    text-align: center;
+    margin-left: 8px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+
+}
+
+.bottom-bar{
+    
+    box-shadow: 0px 0px 3px black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+
+}
+
+footer{
+    margin-top: 10px;
+    float: left;
+    background-color: none;
+    height: 100px;
+    width : 99%;
+
+}
+
