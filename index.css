@@ -124,6 +124,7 @@ section{
 
 .table-epl:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .table-laliga{
@@ -134,6 +135,7 @@ section{
 
 .table-laliga:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .table-bundes{
@@ -144,6 +146,7 @@ section{
 
 .table-bundes:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .table-serie{
@@ -154,6 +157,7 @@ section{
 
 .table-serie:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .table-greece{
@@ -164,6 +168,7 @@ section{
 
 .table-greece:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .table-scotish{
@@ -174,6 +179,7 @@ section{
 
 .table-scotish:hover{
     box-shadow: 0px 0px 5px black;
+    cursor : pointer;
 }
 
 .news-table{
