@@ -3,7 +3,7 @@
 }
 
 .top-box{
-    width : 760px;
+    width : 800px;
 }
 .main-title{
     color: black;
@@ -58,21 +58,21 @@ header{
 
 
 body{
-    background-color: linen;
-    
+    background-color: #fafbfc;
     margin-left: 7%;
     margin-right: 9%;
-    max-width: 1100px;
-    min-width: 1100px;
+    max-width: 1150px;
+    min-width: 1150px;
 }
 
 aside{
     float: left;
     border-color: black;
     width: 148px;
-    height: 800px ;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px midnightblue;
+    height: 819.2px ;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
+    background-color: white;
     
 }
 .leage-image{
@@ -102,20 +102,26 @@ aside{
 
 section{
     float: left;
-    width: 605px;
+    width: 620px;
     height: 800px;
     background-image: url("https://github.com/sanggyeol1/sanggyeol1.github.io/blob/main/%EC%9C%A0%EB%9F%BD%20%EC%A7%80%EB%8F%84.png?raw=true");
     background-repeat: no-repeat; 
-    background-size:contain;
-    box-shadow: 0px 0px 3px midnightblue;
-    margin-left: 8px;
-    border-radius: 5px;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
+    margin-left: 10px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
 }
 .map-table{
     width: 100%;
     height: 62%;
     
+    border-radius: 6px;
 }
+
 .table-epl{
     background-image: url("epl.png");
     background-size: contain;
@@ -124,7 +130,7 @@ section{
 
 .table-epl:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .table-laliga{
@@ -135,7 +141,7 @@ section{
 
 .table-laliga:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .table-bundes{
@@ -146,7 +152,7 @@ section{
 
 .table-bundes:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .table-serie{
@@ -157,7 +163,7 @@ section{
 
 .table-serie:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .table-greece{
@@ -168,7 +174,7 @@ section{
 
 .table-greece:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .table-scotish{
@@ -179,7 +185,7 @@ section{
 
 .table-scotish:hover{
     box-shadow: 0px 0px 5px black;
-    cursor : pointer;
+    cursor: pointer;
 }
 
 .news-table{
@@ -188,10 +194,16 @@ section{
     text-align: center;
 }
 .news-caption{
-    background-color: linen;
-    width: 605px;
-    font-size: 20px;
+    background-color: white;
+    width: 620px;
+    font-size: 23px;
     
+}
+.first-news{
+    border-radius: 6px;
+}
+.second-news{
+    border-radius: 6px;
 }
 
 .nav-box{
@@ -199,10 +211,10 @@ section{
     height: 500px;
     float: left;
     text-align: center;
-    margin-left: 8px;
-    box-shadow: 1px 1px 3px black;
-    border-radius: 5px;
-
+    margin-left: 10px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
+    border-radius: 6px;
+    background-color: white;
 }
 
 .bottom-bar{
@@ -211,7 +223,6 @@ section{
     border-style: solid;
     border-color: white;
     border-width: 1px;
-
 }
 
 footer{
@@ -219,7 +230,7 @@ footer{
     float: left;
     background-color: none;
     height: 100px;
-    width: 99%;
+    width : 99%;
 
 }
 
