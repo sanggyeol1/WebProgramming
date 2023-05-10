@@ -10,15 +10,15 @@
     <table border="0" class="title-table">
         <tr>
             <td>
-                <a class="main-title" href="https://sanggyeol1.github.io">WIKL</a>
+                <a class="main-title" href="index.html">WIKL</a>
             </td>
             <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
-                <a class="sign-in" href="">signIn</a>
+                <a class="sign-in" href="signIn.html">signIn</a>
             </td>
-            <td></td><td></td>
+            <td></td><td></td><td></td><td></td>
             <td>
-                <a class="sign-up" href="">signUp</a>
+                <a class="sign-up" href="signUp.html">signUp</a>
             </td>
         </tr>
     </table>
@@ -27,9 +27,8 @@
 <hr class="top-bar">
     
     <header>
-        <div>
-            <input class="search-box" type="text" value="" size="22" placeholder="찾으시는 선수를 입력하세요">
-            <input class="search-box" type="button" value="검색">
+        <div style="height:35px">
+            
         </div>
         <div class="concrete-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where Is Korean Leaguer? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</div>
         
@@ -168,7 +167,18 @@
 
  <script>
 
-
+    setInterval(function(){
+        var now = new Date();
+        if(now.getSeconds()%2==1){
+            document.getElementsByClassName('first-news')[0].src="sonnews.png"
+            document.getElementsByClassName('second-news')[0].src="kanginnews.png"
+        }
+        else{
+            document.getElementsByClassName('first-news')[0].src="kanginnews.png"
+            document.getElementsByClassName('second-news')[0].src="sonnews.png"
+        }
+        
+    },3000)
 
  </script>
 </html>
@@ -177,6 +187,11 @@
 <!-- 다크모드, 지도 이전버튼, 지도 초기화버튼, 마우스 올리면 details에서 설명 뜸 -->
 <!-- 네이버에 epl 치면 최신 콘텐츠 박스처럼 뉴스 박스 만들기 -->
 <!-- setInterval 사용해서 광고배너, 뉴스가 일정 시간마다 바뀌도록 만듬 -->
+<!-- 라벨테그로 로그인 회원가입 묶기 -->
+<!-- target속성 활용해서 공식 홈페이지 새로운 페이지에 띄우기 -->
+
+
+
 
 
 
