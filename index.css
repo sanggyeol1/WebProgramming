@@ -3,8 +3,8 @@
 }
 
 .top-box{
-    /* width : 800px; */
     width: 95%;
+    text-align: center;
 }
 .main-title{
     color: black;
@@ -42,6 +42,29 @@
 
 }
 
+.search-container{
+    display: flex;
+    vertical-align: top;
+}
+
+.search-box{
+    text-align: center;
+    padding: 10px;
+    width: 220px;
+    display: flex;
+    border-radius: 6px;
+    border-style: solid;
+    font-size: 15px;
+}
+
+.search-button{
+    text-align: center;
+    display: flex;
+    margin-left: 5px;
+    border-radius: 6px;
+    cursor : pointer;
+}
+
 header{
     width : 760px;
     height: 80px;
@@ -53,6 +76,7 @@ header{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     width : 1100px;
+    height: 40px;
 }
 
 
@@ -67,8 +91,8 @@ body{
 aside{
     float: left;
     border-color: black;
-    width: 148px;
-    height: 819.2px ;
+    width: 145px;
+    height: 830px;
     border-radius: 6px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
     background-color: white;
@@ -102,8 +126,8 @@ aside{
 section{
     float: left;
     width: 620px;
-    height: 800px;
-    background-image: url("https://github.com/sanggyeol1/sanggyeol1.github.io/blob/main/%EC%9C%A0%EB%9F%BD%20%EC%A7%80%EB%8F%84.png?raw=true");
+    height: 830px;
+    background-image: url("유럽 지도.png");
     background-repeat: no-repeat; 
     background-size: contain;
     background-color: white;
@@ -200,20 +224,54 @@ section{
 }
 .first-news{
     border-radius: 6px;
+    
 }
 .second-news{
     border-radius: 6px;
+    
 }
 
 .nav-box{
-    width: 330px;
-    height: 500px;
+    width: 340px;
+    height: 520px;
     float: left;
     text-align: center;
     margin-left: 10px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
     border-radius: 6px;
     background-color: white;
+}
+
+.ad-title{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 330px;
+    height: 30px;
+    float: left;
+    
+}
+
+.ad-box{
+    width: 340px;
+    height: 280px;
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
+    border-radius: 6px;
+    background-color: white;
+}
+
+.song-title{
+    margin-top: 20px;
+    
+    text-align: center;
+    
+}
+
+.bottom-image{
+    margin : 10px;
 }
 
 .bottom-bar{
@@ -250,6 +308,7 @@ footer{
     align-items: center;
 }
 
+
 .signIn-box{
     width: 500px;
     height: 500px;
@@ -259,3 +318,30 @@ footer{
     
 }
 
+.signIn-box > div{
+    margin : 20px;
+}
+
+.id-input{
+    width:430px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.password-input{
+    width:430px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.password-reinput{
+    width:430px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 6px;
+    text-align: center;
+}
