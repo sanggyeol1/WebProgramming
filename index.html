@@ -119,7 +119,9 @@
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
-            
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
         </table>
         
         <table class="news-table">
@@ -153,12 +155,16 @@
         광고배너
      </div>
      <div class="ad-box">
-
+        <img src="">
      </div>
 
 </body>
 <div class="song-title" style="width : 1138px; height:50px; float: left;">
 <h3>응원가 들어보기</h3>
+<!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
+<audio id="kangin-music" src=""></audio>
+<audio id="minjae-music" src=""></audio>
+<audio id="son-music" src=""></audio>
 </div>
 
 
@@ -188,6 +194,12 @@
     var userName = prompt("성함을 입력하세요", "홍길동");
     document.getElementById('user-name').innerHTML=userName+"님 안녕하세요"
     
+    //안녕하세요 사라지게 하는 코드
+    setTimeout(function(){
+      document.getElementById('user-name').innerHTML=""  
+    },5000)
+
+
     //지도 위 아이콘 클릭하면 details에 설명
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
@@ -221,10 +233,16 @@
     },7000);
 
 
-    //안녕하세요 사라지게 하는 코드
-    setTimeout(function(){
-      document.getElementById('user-name').innerHTML=""  
-    },5000)
+    //이미지 클릭하면 응원가 나옴
+    document.getElementsByClassName('bottom-image')[0].addEventListener('click',function(){
+        document.getElementById('kangin-music').play();
+    });
+    document.getElementsByClassName('bottom-image')[1].addEventListener('click',function(){
+        document.getElementById('minjae-music').play();
+    });
+    document.getElementsByClassName('bottom-image')[2].addEventListener('click',function(){
+        document.getElementById('son-music').play();
+    });
 
 
     
