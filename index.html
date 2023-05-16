@@ -155,7 +155,9 @@
         광고배너
      </div>
      <div class="ad-box">
-        <img src="">
+        <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+            <img class="ad-image" src="가천대광고1.png">
+        </a>
      </div>
 
 </body>
@@ -232,6 +234,18 @@
         }
     },7000);
 
+    //광고배너 이미지전환코드
+    setInterval(function(){
+        var now = new Date();
+        if(now.getSeconds()%2==0){
+            document.getElementsByClassName('ad-image')[0].src="가천대광고2.png"
+            document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+        }
+        else{
+            document.getElementsByClassName('ad-image')[0].src="가천대광고1.png"
+            document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+        }
+    }, 3000)
 
     //이미지 클릭하면 응원가 나옴
     document.getElementsByClassName('bottom-image')[0].addEventListener('click',function(){
