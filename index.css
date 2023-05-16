@@ -265,6 +265,11 @@ section{
     background-color: white;
 }
 
+.ad-image{
+    margin-top : 10px;
+    width : 95%;
+}
+
 .song-title{
     margin-top: 20px;
     
