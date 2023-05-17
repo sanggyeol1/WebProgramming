@@ -108,10 +108,10 @@
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-serie"></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-greece"></td><td></td>
@@ -201,25 +201,46 @@
       document.getElementById('user-name').innerHTML=""  
     },5000)
 
+    //지도위 아이콘 다 지우는 함수
+    function clearIcon(){
+        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
+    }
 
-    //지도 위 아이콘 클릭하면 details에 설명
+    //지도 위 아이콘 클릭하면 details에 설명,지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
+        clearIcon();
     });
     document.getElementsByClassName('table-laliga')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
+        clearIcon();
     });
     document.getElementsByClassName('table-bundes')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
+        clearIcon();
     });
     document.getElementsByClassName('table-serie')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
+        clearIcon();
     });
     document.getElementsByClassName('table-scotish')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
+        clearIcon();
     });
     document.getElementsByClassName('table-greece')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
+        clearIcon();
     });
 
     setInterval(function(){ //뉴스 화면전환 코드
