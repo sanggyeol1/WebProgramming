@@ -145,6 +145,16 @@ section{
     border-radius: 6px;
 }
 
+.table-renew{
+    background-image: url("renew.png");
+    background-size: contain;
+    border-radius: 5px;
+}
+.table-renew:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
 .table-epl{
     background-image: url("epl.png");
     background-size: contain;
