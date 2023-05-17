@@ -81,7 +81,7 @@
      <section>
         <table border="0" class="map-table">
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td class="table-renew"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td class="table-scotish"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
@@ -210,6 +210,17 @@
         document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
         document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
     }
+
+    //renew 아이콘 누르면 초기화면으로 돌아옴
+    document.getElementsByClassName('table-renew')[0].addEventListener('click',function(){
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(유럽지도2.png)";
+        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url(epl.png)";
+        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url(laliga.png)";
+        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url(bundes.png)";
+        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url(serie.png)";
+        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url(scotish.jpg)";
+        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url(greece.jpg)";
+    })
 
     //지도 위 아이콘 클릭하면 details에 설명,지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
