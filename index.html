@@ -165,8 +165,8 @@
 <h3>응원가 들어보기</h3>
 <!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
 <audio id="kangin-music" src=""></audio>
-<audio id="minjae-music" src=""></audio>
-<audio id="son-music" src=""></audio>
+<audio id="minjae-music" src="김민재응원가.mp3"></audio>
+<audio id="son-music" src="손흥민응원가.mp3"></audio>
 </div>
 
 
@@ -254,7 +254,8 @@
         clearIcon();
     });
 
-    setInterval(function(){ //뉴스 화면전환 코드
+    //뉴스 화면전환 코드
+    setInterval(function(){ 
         var now = new Date();
         if(now.getSeconds()%2==1){
             document.getElementsByClassName('first-news')[0].src="sonnews.png"
