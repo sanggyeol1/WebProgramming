@@ -54,24 +54,24 @@
         <details>
         <summary class="aside-league">리그</summary>
             <ul>
-            <li><a class="laliga" href="">라리가</a></li>
-            <li><a class="epl" href="">EPL</a></li>
-            <li><a class="bundes" href="">분데스리가</a></li>
-            <li><a class="seria" href="">세리에a</a></li>
-            <li><a class="greece" href="">수페르리가</a></li>
-            <li><a class="scotish" href="">스코티시 프리미어십</a></li>
+            <li class="laliga">라리가</li>
+            <li class="epl">EPL</li>
+            <li class="bundes">분데스리가</li>
+            <li class="serie">세리에a</li>
+            <li class="greece">수페르리가</li>
+            <li class="scotish">스코티시 프리미어십</li>
             </ul>
         </details>
         <details>
             <summary class="aside-player">선수들</summary>
                 <ul>
-                <li><a class="" href="">손흥민</a></li>
-                <li><a class="" href="">김민재</a></li>
-                <li><a class="" href="">이강인</a></li>
-                <li><a class="" href="">황희찬</a></li>
-                <li><a class="" href="">이재성</a></li>
-                <li><a class="" href="">황인범</a></li>
-                <li><a class="" href="">오현규</a></li>
+                <li><a class="aside-son" href="">손흥민</a></li>
+                <li><a class="aside-kim" href="">김민재</a></li>
+                <li><a class="aside-kangin" href="">이강인</a></li>
+                <li><a class="aside-hwang" href="">황희찬</a></li>
+                <li><a class="aside-jaesung" href="">이재성</a></li>
+                <li><a class="aside-inbum" href="">황인범</a></li>
+                <li><a class="aside-oh" href="">오현규</a></li>
                 </ul>
         </details>
     </div>
@@ -149,7 +149,10 @@
      </section>
 
      <div class="nav-box">
-        
+        <div>리그명 : </div>
+        <div>연고지 : </div>
+        <div>역사 : </div>
+        <div>주요선수 : </div>
      </div>
      <div class="ad-title">
         광고배너
@@ -201,6 +204,40 @@
       document.getElementById('user-name').innerHTML=""  
     },5000)
 
+    //aside 선수이름 누르면 맵,설명 변화
+    document.getElementsByClassName('epl')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
+        clearIcon();
+    });
+    document.getElementsByClassName('laliga')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
+        clearIcon();
+    });
+    document.getElementsByClassName('bundes')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
+        clearIcon();
+    });
+    document.getElementsByClassName('serie')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
+        clearIcon();
+    });
+    document.getElementsByClassName('scotish')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
+        clearIcon();
+    });
+    document.getElementsByClassName('greece')[0].addEventListener('click',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
+        document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
+        clearIcon();
+    });
+
+
+
     //지도위 아이콘 다 지우는 함수
     function clearIcon(){
         document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
@@ -224,7 +261,7 @@
 
     //지도 위 아이콘 클릭하면 details에 설명,지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
+        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명 ";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
         clearIcon();
     });
@@ -290,11 +327,6 @@
     document.getElementsByClassName('bottom-image')[2].addEventListener('click',function(){
         document.getElementById('son-music').play();
     });
-
-
-    
-
-
 
 
  </script>
