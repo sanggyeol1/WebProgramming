@@ -65,13 +65,13 @@
         <details>
             <summary class="aside-player">선수들</summary>
                 <ul>
-                <li class="aside-son">손흥민</li>
-                <li class="aside-kim">김민재</li>
-                <li class="aside-kangin">이강인</li>
-                <li class="aside-hwang">황희찬</li>
-                <li class="aside-jaesung">이재성</li>
-                <li class="aside-inbum">황인범</li>
-                <li class="aside-oh">오현규</li>
+                <a href="son.html"><li class="aside-son">손흥민</li></a>
+                <a href="minjae.html"><li class="aside-kim">김민재</li></a>
+                <a href="kangin.html"><li class="aside-kangin">이강인</li></a>
+                <a href="heechan.html"><li class="aside-hwang">황희찬</li></a>
+                <a href="jaesung.html"><li class="aside-jaesung">이재성</li></a>
+                <a href="inbeom.html"><li class="aside-inbum">황인범</li></a>
+                <a href="oh.html"><li class="aside-oh">오현규</li></a>
                 </ul>
         </details>
     </div>
@@ -196,13 +196,13 @@
 
  <script>
     //안녕하세요 문구
-    var userName = prompt("성함을 입력하세요", "홍길동");
-    document.getElementById('user-name').innerHTML=userName+"님 안녕하세요"
+    // var userName = prompt("성함을 입력하세요", "홍길동");
+    // document.getElementById('user-name').innerHTML=userName+"님 안녕하세요"
     
     //안녕하세요 사라지게 하는 코드
-    setTimeout(function(){
-      document.getElementById('user-name').innerHTML=""  
-    },5000)
+    // setTimeout(function(){
+    //   document.getElementById('user-name').innerHTML=""  
+    // },5000)
 
     //aside 선수이름 누르면 맵,설명 변화
     document.getElementsByClassName('epl')[0].addEventListener('click',function(){
