@@ -99,19 +99,19 @@
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-bundes"></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-napolli"></td><td></td><td></td><td></td><td class="table-mallorca"></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td class="table-mainz"></td><td></td><td class="table-wolves"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-olympia"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-tottenham"></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td class="table-celtic"></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-greece"></td><td></td>
@@ -238,7 +238,7 @@
 
 
 
-    //지도위 아이콘 다 지우는 함수
+    //지도위 리그 아이콘 다 지우는 함수
     function clearIcon(){
         document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
         document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
@@ -257,6 +257,14 @@
         document.getElementsByClassName('table-serie')[0].style.backgroundImage="url(serie.png)";
         document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url(scotish.jpg)";
         document.getElementsByClassName('table-greece')[0].style.backgroundImage="url(greece.jpg)";
+
+        document.getElementsByClassName('table-mallorca')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-celtic')[0].style.backgroundImage="url()";
+        document.getElementsByClassName('table-tottenham')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-wolves')[0].style.backgroundImage="url()";
+        document.getElementsByClassName('table-mainz')[0].style.backgroundImage="url()";
+        document.getElementsByClassName('table-napolli')[0].style.backgroundImage="url()";
+        document.getElementsByClassName('table-olympia')[0].style.backgroundImage="url()";
     })
 
     //지도 위 아이콘 클릭하면 details에 설명,지도 바뀜
@@ -264,31 +272,38 @@
         document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명 ";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-tottenham')[0].style.backgroundImage="url(토트넘아이콘.png)";
+        document.getElementsByClassName('table-wolves')[0].style.backgroundImage="url(울버햄튼아이콘.png)";
     });
     document.getElementsByClassName('table-laliga')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-mallorca')[0].style.backgroundImage="url(마요르카아이콘.png)";
     });
     document.getElementsByClassName('table-bundes')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-mainz')[0].style.backgroundImage="url(마인츠아이콘.jpg)";
     });
     document.getElementsByClassName('table-serie')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-napolli')[0].style.backgroundImage="url(나폴리아이콘.png)";
     });
     document.getElementsByClassName('table-scotish')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-celtic')[0].style.backgroundImage="url(셀틱아이콘.jpg)";
     });
     document.getElementsByClassName('table-greece')[0].addEventListener('click',function(){
         document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
         clearIcon();
+        document.getElementsByClassName('table-olympia')[0].style.backgroundImage="url(올림피아코스아이콘.png)";
     });
 
     //뉴스 화면전환 코드
