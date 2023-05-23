@@ -42,6 +42,7 @@
 
 }
 
+/* 검색창 */
 .search-container{
     display: flex;
     vertical-align: top;
@@ -159,6 +160,7 @@ section{
     cursor: pointer;
 }
 
+/* 테이블 위 리그 아이콘 */
 .table-epl{
     background-image: url("epl.png");
     background-size: contain;
@@ -227,6 +229,72 @@ section{
     cursor: pointer;
 }
 
+/* 테이블 위 팀 아이콘 */
+.table-mallorca{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-mallorca:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-tottenham{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-tottenham:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-wolves{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-wolves:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-celtic{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-celtic:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-mainz{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-mainz:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-napolli{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-napolli:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.table-olympia{
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.table-olympia:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+
+/* 뉴스테이블 */
 .news-table{
     width: 100%;
     height: 36%;
@@ -247,6 +315,7 @@ section{
     
 }
 
+/* details 박스 */
 .nav-box{
     width: 340px;
     height: 520px;
@@ -258,6 +327,7 @@ section{
     background-color: white;
 }
 
+/* 광고배너 */
 .ad-title{
     text-align: center;
     margin-left: 10px;
@@ -284,6 +354,7 @@ section{
     width : 95%;
 }
 
+/* 노래 들어보기 */
 .song-title{
     margin-top: 20px;
     
@@ -309,6 +380,7 @@ section{
     border-width: 1px;
 }
 
+/* 아래 나의 정보 */
 footer{
     margin-top: 10px;
     float: left;
@@ -323,7 +395,7 @@ footer{
 
 
 
-/* -------------------------------로그인 css------------------------------ */
+/* -------------------------------로그인, 회원가입 css------------------------------ */
 
 .signIn-body{
     width: 99%;
