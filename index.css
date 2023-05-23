@@ -123,6 +123,10 @@ aside{
     text-shadow : 3px 3px 5px black;
     cursor: pointer;
 }
+
+.aside-player > a{
+    text-decoration: none;
+}
 .aside-player:hover{
     text-shadow : 3px 3px 5px black;
     cursor: pointer;
