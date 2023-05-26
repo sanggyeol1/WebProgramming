@@ -74,12 +74,14 @@
                 <a href="oh.html"><li class="aside-oh">오현규</li></a>
                 </ul>
         </details>
-    </div>
-        
+    </div>    
     </aside>
 
+    <!-- locaton.href란? ==  location 객체의 "href" 속성값을 읽는 것 ==현재 페이지의 전체 URL
+    location 객체는 DOM의 최상위 객체인 window 객체에 바로 붙어있다. 보통 window 객체명은 생략할 수 있기 때문에 
+    location.href로 사용하지만 정확하게는 window.location.href 라고 사용하는 것이 정확 -->
      <section>
-        <table border="0" class="map-table">
+        <table border="0" class="map-table">  
             <tr>
                 <td class="table-renew"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
@@ -99,19 +101,19 @@
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-bundes"></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-napolli"></td><td></td><td></td><td></td><td class="table-mallorca"></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='minjae.html'" class="table-napolli"></td><td></td><td></td><td></td><td onclick="location.href='kangin.html'" class="table-mallorca"></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td class="table-mainz"></td><td></td><td class="table-wolves"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='jaesung.html'" class="table-mainz"></td><td></td><td onclick="location.href='heechan.html'" class="table-wolves"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-olympia"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='inbeom.html'" class="table-olympia"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-tottenham"></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='son.html'" class="table-tottenham"></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td class="table-celtic"></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td onclick="location.href='oh.html'" class="table-celtic"></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-greece"></td><td></td>
@@ -164,7 +166,9 @@
      </div>
 
 </body>
+
 <div class="song-title" style="width : 1138px; height:50px; float: left;">
+
 <h3>응원가 들어보기</h3>
 <!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
 <audio id="kangin-music" src=""></audio>
