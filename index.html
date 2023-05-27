@@ -9,10 +9,18 @@
 <div class="top-box">
     <table border="0" class="title-table">
         <tr>
+            
             <td>
+                <input class="dark-mode" type="image" src="renew.png" width="80%" style="border-radius: 24px; vertical-align: middle; margin-right: -20px;">
+            </td>
+            <td class="dark-title" style="vertical-align: bottom; text-align: left; font-size: 18px;">
+                Dark
+            </td>  
+            <td></td><td></td><td></td>
+            <td id="user-name">
                 <a class="main-title" href="index.html">WIKL</a>
             </td>
-            <td></td><td></td><td></td><td></td><td id="user-name"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
                 <a class="sign-in" href="signIn.html">signIn</a>
             </td>
@@ -30,16 +38,15 @@
         
 
         <form class="search-container" name="form" action="https://search.naver.com/search.naver" method="get">
-            <input class="search-box" type="text" name="query" value="" placeholder="선수 및 팀 검색"> <input class="search-button" type="submit" value="검색">
+            <input class="search-box" type="text" name="query" value="" placeholder="선수 및 팀 검색"><input class="search-button" type="image" src="돋보기2.png">
         </form>
             
-        <div class="concrete-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Where Is Korean Leaguer?</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</div>
+        <div class="concrete-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Where Is Korean Leaguer?</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</div>
         
     </header>
      
-     
-    <aside>
-        
+
+    <aside>   
     <div style="text-align: center; margin-top: 12px;"><i>공식 홈페이지</i></div>
     <div>
     <a href="https://www.premierleague.com/matchweek/7862/blog" target="_blank"><img class="leage-image" src="epl.png" width="50px"></a>
@@ -156,16 +163,32 @@
         <div>역사 : </div>
         <div>주요선수 : </div>
      </div>
-     <div class="ad-title">
-        광고배너
-     </div>
-     <div class="ad-box">
-        <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
-            <img class="ad-image" src="가천대광고1.png">
-        </a>
-     </div>
+
 
 </body>
+
+
+<div class="ad-title">
+    <h3>광고 배너</h3>
+ </div>
+ <div class="ad-box">
+    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+        <img class="ad-image" src="가천대광고1.png">
+    </a>
+ </div>
+ <div class="ad-box">
+    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+        <img class="ad-image" src="가천대광고1.png">
+    </a>
+ </div>
+ <div class="ad-box">
+    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+        <img class="ad-image" src="가천대광고1.png">
+    </a>
+ </div>
+
+
+
 
 <div class="song-title" style="width : 1138px; height:50px; float: left;">
 
@@ -207,6 +230,43 @@
     // setTimeout(function(){
     //   document.getElementById('user-name').innerHTML=""  
     // },5000)
+
+    //지도상태 0,1인 경우로 나눔
+    //querySelectorAlll은 hover같은 css선택자의 가상 클래스도 가져올 수 있다.
+
+    var mode = 0 //일반모드
+    //다크모드 코드
+        document.querySelectorAll(".dark-mode")[0].addEventListener("click",function(){
+            if(mode==0){
+                document.body.style.backgroundColor="#333333";
+                document.getElementsByClassName('dark-title')[0].style.color="white"
+                document.getElementsByClassName('dark-title')[0].innerHTML="Light"
+                document.getElementsByClassName('main-title')[0].style.color="white"
+                document.getElementsByClassName('sign-in')[0].style.color="white"
+                document.getElementsByClassName('sign-up')[0].style.color="white"
+                
+                document.getElementsByClassName('concrete-title')[0].style.color="white"
+                document.getElementsByClassName('ad-title')[0].style.color="white"
+                document.getElementsByClassName('song-title')[0].style.color="white"
+                document.getElementsByTagName('footer')[0].style.color="white"
+                mode = 1;
+            }
+
+            else if(mode==1){
+                document.body.style.backgroundColor="#fafbfc";
+                document.getElementsByClassName('dark-title')[0].style.color="black"
+                document.getElementsByClassName('dark-title')[0].innerHTML="Dark"
+                document.getElementsByClassName('main-title')[0].style.color="black"
+                document.getElementsByClassName('sign-in')[0].style.color="black"
+                document.getElementsByClassName('sign-up')[0].style.color="black"
+                document.getElementsByClassName('concrete-title')[0].style.color="black"
+                document.getElementsByClassName('ad-title')[0].style.color="black"
+                document.getElementsByClassName('song-title')[0].style.color="black"
+                document.getElementsByTagName('footer')[0].style.color="black"
+                mode = 0;
+            }
+        });
+
 
     //aside 선수이름 누르면 맵,설명 변화
     document.getElementsByClassName('epl')[0].addEventListener('click',function(){
@@ -271,44 +331,131 @@
         document.getElementsByClassName('table-olympia')[0].style.backgroundImage="url()";
     })
 
-    //지도 위 아이콘 클릭하면 details에 설명,지도 바뀜
+    //지도 위 아이콘 클릭하면 지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명 ";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
         clearIcon();
         document.getElementsByClassName('table-tottenham')[0].style.backgroundImage="url(토트넘아이콘.png)";
         document.getElementsByClassName('table-wolves')[0].style.backgroundImage="url(울버햄튼아이콘.png)";
+       
     });
     document.getElementsByClassName('table-laliga')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
         clearIcon();
         document.getElementsByClassName('table-mallorca')[0].style.backgroundImage="url(마요르카아이콘.png)";
+       
     });
     document.getElementsByClassName('table-bundes')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
         clearIcon();
         document.getElementsByClassName('table-mainz')[0].style.backgroundImage="url(마인츠아이콘.jpg)";
+        
     });
     document.getElementsByClassName('table-serie')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
         clearIcon();
         document.getElementsByClassName('table-napolli')[0].style.backgroundImage="url(나폴리아이콘.png)";
+        
     });
     document.getElementsByClassName('table-scotish')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
         clearIcon();
         document.getElementsByClassName('table-celtic')[0].style.backgroundImage="url(셀틱아이콘.jpg)";
+      
     });
     document.getElementsByClassName('table-greece')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
         document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
         clearIcon();
         document.getElementsByClassName('table-olympia')[0].style.backgroundImage="url(올림피아코스아이콘.png)";
+       
     });
+
+    //details 지움
+    function clearDetails(){
+        document.getElementsByClassName('nav-box')[0].innerHTML=""
+    }
+    //아이콘에 마우스 올리면 details에 리그, 팀 관련 설명나옴, 떼면 사라짐
+    //리그
+    document.getElementsByClassName('table-epl')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명"
+    })
+    document.getElementsByClassName('table-epl')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-laliga')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명"
+    })
+    document.getElementsByClassName('table-laliga')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-serie')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명"
+    })
+    document.getElementsByClassName('table-serie')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-bundes')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명"
+    })
+    document.getElementsByClassName('table-bundes')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-scotish')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="스코티시 설명"
+    })
+    document.getElementsByClassName('table-scotish')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-greece')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="그리스 설명"
+    })
+    document.getElementsByClassName('table-greece')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    //팀
+    document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="토트넘 설명"
+    })
+    document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-wolves')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="울브스 설명"
+    })
+    document.getElementsByClassName('table-wolves')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="마요르카 설명"
+    })
+    document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-napolli')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="나폴리 설명"
+    })
+    document.getElementsByClassName('table-napolli')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-celtic')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="셀틱 설명"
+    })
+    document.getElementsByClassName('table-celtic')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-mainz')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="마인츠 설명"
+    })
+    document.getElementsByClassName('table-mainz')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    document.getElementsByClassName('table-olympia')[0].addEventListener('mouseover',function(){
+        document.getElementsByClassName('nav-box')[0].innerHTML="올림피아코스 설명"
+    })
+    document.getElementsByClassName('table-olympia')[0].addEventListener('mouseout',function(){
+        clearDetails();
+    })
+    
 
     //뉴스 화면전환 코드
     setInterval(function(){ 
@@ -327,12 +474,18 @@
     setInterval(function(){
         var now = new Date();
         if(now.getSeconds()%2==0){
-            document.getElementsByClassName('ad-image')[0].src="가천대광고2.png"
-            document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+            for(var i=0;i<3;i++){
+                document.getElementsByClassName('ad-image')[i].src="가천대광고2.png"
+                document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+            }
+            
         }
         else{
-            document.getElementsByClassName('ad-image')[0].src="가천대광고1.png"
-            document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+            for(i=0;i<3;i++){
+                document.getElementsByClassName('ad-image')[i].src="가천대광고1.png"
+                document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+            }
+            
         }
     }, 3000)
 
