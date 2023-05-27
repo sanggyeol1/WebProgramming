@@ -2,6 +2,7 @@
     width : 9%;
 }
 
+
 .top-box{
     width: 95%;
     text-align: center;
@@ -10,8 +11,9 @@
     color: black;
     text-decoration: none;
     font-family :'Times New Roman', Times, serif;
-    text-shadow : 3px 3px 5px black;
-    font-size: 44px;
+    text-shadow : 2px 2px 5px black;
+    font-size: 58px;
+    margin-left: 15px;
 }
 
 .sign-in{
@@ -45,30 +47,39 @@
 /* 검색창 */
 .search-container{
     display: flex;
-    vertical-align: top;
+    width: 1150px;
+
 }
 
 .search-box{
     text-align: center;
     padding: 10px;
-    width: 220px;
+    margin-left: 155px;
+    margin-bottom: 10px;
+    width: 610px;
+    height: 35px;
     display: flex;
-    border-radius: 6px;
+    border-radius: 25px;
     border-style: solid;
+    border-color: black;
     font-size: 15px;
 }
 
 .search-button{
     text-align: center;
     display: flex;
-    margin-left: 5px;
-    border-radius: 6px;
+    margin-left: 10px;
+    background-color: #fafbfc;
     cursor : pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 4px;
 }
 
 header{
-    width : 760px;
-    height: 80px;
+    width : 1150px;
+    height: 105px;
     font-size: 30px;
     
 }
@@ -87,7 +98,10 @@ body{
     margin-right: 9%;
     max-width: 1150px;
     min-width: 1150px;
+
 }
+
+
 
 aside{
     float: left;
@@ -155,9 +169,9 @@ section{
 }
 
 .table-renew{
-    background-image: url("renew.png");
+    background-image: url("home.png");
     background-size: contain;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .table-renew:hover{
     box-shadow: 0px 0px 5px black;
@@ -312,17 +326,22 @@ section{
 }
 .first-news{
     border-radius: 6px;
-    
+}
+.first-news:hover{
+    box-shadow: 0px 0px 10px black;
 }
 .second-news{
     border-radius: 6px;
-    
 }
+.second-news:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
 
 /* details 박스 */
 .nav-box{
     width: 340px;
-    height: 520px;
+    height: 600px;
     float: left;
     text-align: center;
     margin-left: 10px;
@@ -334,36 +353,37 @@ section{
 /* 광고배너 */
 .ad-title{
     text-align: center;
-    margin-left: 10px;
-    margin-top: 6px;
-    width: 330px;
-    height: 30px;
+    width: 1150px;
     float: left;
-    
+    margin-top: 30px;
+    margin-bottom: -15px;
 }
 
 .ad-box{
-    width: 340px;
+    width: 350px;
     height: 300px;
     float: left;
     text-align: center;
-    margin-left: 10px;
+    margin: 15px 15px 15px 15px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
     border-radius: 6px;
     background-color: white;
+}
+.ad-box:hover{
+    box-shadow: 0px 0px 10px black;
 }
 
 .ad-image{
     margin-top : 10px;
     width : 95%;
+    
 }
+
 
 /* 노래 들어보기 */
 .song-title{
     margin-top: 20px;
-    
     text-align: center;
-    
 }
 
 .bottom-image{
@@ -372,7 +392,7 @@ section{
 }
 
 .bottom-image:hover{
-    box-shadow: 0px 0px 7px black;
+    box-shadow: 0px 0px 10px black;
     cursor: pointer;
 }
 
