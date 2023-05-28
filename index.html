@@ -172,18 +172,21 @@
     <h3>광고 배너</h3>
  </div>
  <div class="ad-box">
-    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+    <input type="button" class="ad-delete" value="X" style="border-radius: 6px; margin-top: 6px; cursor: pointer;"> | 광고제거
+    <a class="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
         <img class="ad-image" src="가천대광고1.png">
     </a>
  </div>
  <div class="ad-box">
-    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
-        <img class="ad-image" src="가천대광고1.png">
+    <input type="button" class="ad-delete" value="X" style="border-radius: 6px; margin-top: 6px; cursor: pointer;"> | 광고제거
+    <a class="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+        <img class="ad-image" src="가천대광고2.png">
     </a>
  </div>
  <div class="ad-box">
-    <a id="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
-        <img class="ad-image" src="가천대광고1.png">
+    <input type="button" class="ad-delete" value="X" style="border-radius: 6px; margin-top: 6px; cursor: pointer;"> | 광고제거
+    <a class="ad-link" href="https://www.google.com/search?q=%EB%82%9A%EC%8B%9C&source=lmns&bih=557&biw=1229&hl=ko&sa=X&ved=2ahUKEwi6xcHLqpX_AhUyslYBHSCwDQ8Q_AUoAHoECAEQAA" target="_blank">
+        <img class="ad-image" src="19금광고.svg">
     </a>
  </div>
 
@@ -236,7 +239,7 @@
 
     var mode = 0 //일반모드
     //다크모드 코드
-        document.querySelectorAll(".dark-mode")[0].addEventListener("click",function(){
+        document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
             if(mode==0){
                 document.body.style.backgroundColor="#333333";
                 document.getElementsByClassName('dark-title')[0].style.color="white"
@@ -468,26 +471,41 @@
             document.getElementsByClassName('first-news')[0].src="kanginnews.png"
             document.getElementsByClassName('second-news')[0].src="sonnews.png"
         }
-    },7000);
+    },3000);
 
     //광고배너 이미지전환코드
-    setInterval(function(){
-        var now = new Date();
-        if(now.getSeconds()%2==0){
-            for(var i=0;i<3;i++){
-                document.getElementsByClassName('ad-image')[i].src="가천대광고2.png"
-                document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
-            }
+    // setInterval(function(){
+    //     var now = new Date();
+    //     if(now.getSeconds()%2==0){
+    //         for(var i=0;i<3;i++){
+    //             document.getElementsByClassName('ad-image')[i].src="가천대광고2.png"
+    //             document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+    //         }
             
-        }
-        else{
-            for(i=0;i<3;i++){
-                document.getElementsByClassName('ad-image')[i].src="가천대광고1.png"
-                document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
-            }
-            
-        }
-    }, 3000)
+    //     }
+    //     else{
+    //         for(i=0;i<3;i++){
+    //             document.getElementsByClassName('ad-image')[i].src="가천대광고1.png"
+    //             document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
+    //         }
+    //     }
+    // }, 3000)
+
+
+    //광고 숨기기 기능
+    document.getElementsByClassName('ad-delete')[0].addEventListener('click',function(){
+        document.getElementsByClassName('ad-image')[0].src="none";
+        document.getElementsByClassName('ad-link')[0].href="none";
+    })
+    document.getElementsByClassName('ad-delete')[1].addEventListener('click',function(){
+        document.getElementsByClassName('ad-image')[1].src="none";
+        document.getElementsByClassName('ad-link')[1].href="none";
+    })
+    document.getElementsByClassName('ad-delete')[2].addEventListener('click',function(){
+        document.getElementsByClassName('ad-image')[2].src="none";
+        document.getElementsByClassName('ad-link')[2].href="none";
+    })
+    
 
     //이미지 클릭하면 응원가 나옴
     document.getElementsByClassName('bottom-image')[0].addEventListener('click',function(){
