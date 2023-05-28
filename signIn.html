@@ -34,10 +34,7 @@
 <div class="signIn-body">
     <div class="signIn-box">
         <div>
-            <h3>회원가입</h3>
-        </div>
-        <div>
-            이름 입력 : <input class="id-input" type="text" value="" placeholder="아이디를 입력하세요">
+            <h3>로그인</h3>
         </div>
         <div>
             ID 입력 : <input class="id-input" type="text" value="" placeholder="아이디를 입력하세요">
@@ -46,13 +43,10 @@
             비밀 번호 : <input class="password-input" type="password" value="" placeholder="비밀번호를 입력하세요">
         </div>
         <div>
-            비밀번호 확인 : <input  class="password-reinput" type="password" value="" placeholder="비밀번호를 다시 입력하세요"> <span id="same-pw"></span>
+            <input type="submit" value="로그인" onclick="alertSignIn()"> 
         </div>
         <div>
-            <input type="submit" value="회원가입" onclick="alertSignUp()"> 
-        </div>
-        <div>
-            이미 계정이 있다면? <a href="signIn.html"><input type="button" href="signIn.html" value="로그인"></a>
+            계정이 없다면? <a href="signUp.html"><input type="button" value="회원가입"></a>
         </div>
     </div>
 
@@ -78,7 +72,6 @@
 
 
  <script>
-
 var mode = 0 //일반모드
     //다크모드 코드
         document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
@@ -102,13 +95,10 @@ var mode = 0 //일반모드
         });
 
         //경고메시지
-        function alertSignUp(){
-                alert('사용할 수 없는 ID입니다.');
-        }
-            
-        
-
-
+        function alertSignIn(){
+                alert('아이디와 비밀번호가 일치하지 않습니다.');
+            }
+    
  </script>
 </html>
 
