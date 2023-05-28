@@ -376,6 +376,7 @@ section{
 .ad-image{
     margin-top : 10px;
     width : 95%;
+    height: 82%;
     
 }
 
@@ -473,7 +474,7 @@ footer{
 /* ------------------------------선수설명 css------------------------------- */
 
 .info-body{
-    width: 99%;
+    width: 1150px;
     height: 1300px;
     text-align: center;
     
@@ -488,7 +489,6 @@ footer{
     background-color:white;
     border-radius: 6px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
-   
 }
 
 .info-box > div{
@@ -506,3 +506,6 @@ footer{
 .info-image2{
     display: flex;
 }
+
+
+
