@@ -10,9 +10,13 @@
     <table border="0" class="title-table">
         <tr>
             <td>
+                <input class="dark-mode" type="image" src="renew.png" width="70%" style="border-radius: 24px; vertical-align: middle;">
+            </td>
+            <td></td><td></td><td></td><td></td>
+            <td id="user-name">
                 <a class="main-title" href="index.html">WIKL</a>
             </td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
                 <a class="sign-in" href="signIn.html">signIn</a>
             </td>
@@ -27,26 +31,76 @@
 <hr class="top-bar">
     
     
-<div class="signIn-body">
-    <div class="signIn-box">
+<div class="info-body">
+    <div class="info-box">
         <div>
-            <h3>로그인</h3>
+            <h2 style="margin-bottom: -15px;">김민재</h2>
+            <h5>Minjae Kim</h5>
+        </div>
+        <div class="info-image-box">
+            <div class="info-image1">
+                <img src="나폴리아이콘.png" width="400px">
+            </div>
+            <div class="info-image2">
+                <img src="민재사진.webp" width="350px">
+            </div>
         </div>
         <div>
-            ID 입력 : <input class="id-input" type="text" value="" placeholder="아이디를 입력하세요">
+            소속팀 :<br> SSC 나폴리
         </div>
         <div>
-            비밀 번호 : <input class="password-input" type="password" value="" placeholder="비밀번호를 입력하세요">
+            출생 :<br> 1996년 11월 15일(26세) 경상남도 통영시 도천동
         </div>
         <div>
-            <input type="submit" value="로그인"> 
+            신체 :<br> 키 190cm / 체중 90kg
         </div>
         <div>
-            계정이 없다면? <a href="signUp.html"><input type="button" value="회원가입"></a>
+            포지션 :<br> 센터백
         </div>
+        <div>
+            주발 :<br> 오른발
+        </div>
+        <div>
+            플레이스타일 :<br>2022-23 시즌 기준으로 뛰어난
+             피지컬과 신체 능력에 기반한 경합 능력, 수비 기술, 
+             날카로운 예측력과 집중력을 바탕으로 센터백에게 요구되는 
+             다양한 방면에서 월드클래스의 기량을 보여준다. 스탠딩 태클,
+              슬라이딩 태클, 경합 등 대인 수비뿐만 아니라 지능적인 
+              위치 선정을 바탕으로 패스 차단과 슛 블로킹, 오프사이드 
+              라인 커맨딩 등 수비수라면 갖춰야 할 필수적인 능력들 모두
+               토탈 패키지로 갖췄다. 육중한 체격에 비해 발도 순간 최고
+                35km/h로 굉장히 빠르고 최고 시속에 도달하는 가속도도 빠르다
+        </div>
+        <div>
+            등번호 :<br> 국가대표 4번, 클럽팀 3번
+        </div>
+        <div>
+            팀 커리어 : <br>경주 한국수력원자력 (2016) -> 
+            전북 현대 모터스 (2017~2018) -> 
+            베이징 궈안 (2019~2021) -> 
+            페네르바흐체 SK (2021~2022) -> 
+            SSC 나폴리 (2022~ )
+        </div>
+        <div>
+            국가대표 :<br> 49경기 3골 (대한민국 / 2017~ )
+        </div>
+        <div>
+            SNS : <br>
+            <a href="https://www.instagram.com/kiminjae3/"><img src="인스타.svg" width="30px" style="vertical-align: middle;"></a>
+            | <a href=""><img src="페이스북.svg" width="30px" style="vertical-align: middle;"></a>
+        </div>
+        <div>
+            응원가 : <br><input type="button" value="응원가 들어보기" style="padding: 10px; border-radius: 5px; cursor: pointer; background-color: white;">  
+            | <input class="like-button" type="image" src="좋아요.jpg" width="45px" style="vertical-align: bottom; border-radius: 16px;"> 
+            <span class="like-count"></span>&nbsp;
+            <input class="like-button" type="image" src="싫어요.jpg" width="45px" style="vertical-align: bottom; border-radius: 16px;">
+            <span class="like-count"></span> &nbsp;<img class="emotion" src="soso.png" width="45px" style="vertical-align: bottom;">
+        </div>
+        </div>
+        <audio src=""></audio>
     </div>
 
-</div>
+        
 
 
 </body>
@@ -62,14 +116,61 @@
  </footer>
 
 
-
-
-
-
-
  <script>
 
+var mode = 0 //일반모드
+    //다크모드 코드
+        document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
+            if(mode==0){
+                document.body.style.backgroundColor="#333333";
+                document.getElementsByClassName('main-title')[0].style.color="white";
+                document.getElementsByClassName('sign-in')[0].style.color="white";
+                document.getElementsByClassName('sign-up')[0].style.color="white";
+                document.getElementsByTagName('footer')[0].style.color="white";
+                mode = 1;
+            }
 
+            else if(mode==1){
+                document.body.style.backgroundColor="#fafbfc";
+                document.getElementsByClassName('main-title')[0].style.color="black";
+                document.getElementsByClassName('sign-in')[0].style.color="black";
+                document.getElementsByClassName('sign-up')[0].style.color="black";
+                document.getElementsByTagName('footer')[0].style.color="black";
+                mode = 0;
+            }
+        });
+        
+        //응원가 옆 좋아요기능
+        likeCount = 0;
+        hateCount = 0;
+        document.getElementsByClassName('like-count')[0].innerHTML=likeCount;
+        document.getElementsByClassName('like-count')[1].innerHTML=hateCount;
 
+        document.getElementsByClassName('like-button')[0].addEventListener('click',function(){
+            likeCount+=1;
+            document.getElementsByClassName('like-count')[0].innerHTML=likeCount;
+            changeEmotion()
+        })
+        
+        document.getElementsByClassName('like-button')[1].addEventListener('click',function(){
+            hateCount+=1;
+            document.getElementsByClassName('like-count')[1].innerHTML=hateCount;
+            changeEmotion()
+        })
+
+        //표정바뀜
+        function changeEmotion(){
+            if(likeCount==hateCount){
+                document.getElementsByClassName('emotion')[0].src="soso.png"
+            }
+            else if(likeCount > hateCount){
+                document.getElementsByClassName('emotion')[0].src="happy.png"
+            }
+            else if(likeCount < hateCount){
+                document.getElementsByClassName('emotion')[0].src="sad.png"
+            }
+        }
+        
+        
  </script>
 </html>
