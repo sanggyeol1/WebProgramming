@@ -173,7 +173,7 @@
  </div>
  <div class="ad-box">
     <input type="button" class="ad-delete" value="X" style="border-radius: 6px; margin-top: 6px; cursor: pointer;"> | 광고제거
-    <a class="ad-link" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
+    <a class="ad-link" onclick="" href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D" target="_blank">
         <img class="ad-image" src="가천대광고1.png">
     </a>
  </div>
@@ -495,7 +495,8 @@
     //광고 숨기기 기능
     document.getElementsByClassName('ad-delete')[0].addEventListener('click',function(){
         document.getElementsByClassName('ad-image')[0].src="none";
-        document.getElementsByClassName('ad-link')[0].href="none";
+        document.getElementsByClassName('ad-link')[0].href="none"
+        
     })
     document.getElementsByClassName('ad-delete')[1].addEventListener('click',function(){
         document.getElementsByClassName('ad-image')[1].src="none";
