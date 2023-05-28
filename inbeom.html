@@ -10,9 +10,13 @@
     <table border="0" class="title-table">
         <tr>
             <td>
+                <input class="dark-mode" type="image" src="renew.png" width="70%" style="border-radius: 24px; vertical-align: middle;">
+            </td>
+            <td></td><td></td><td></td><td></td>
+            <td id="user-name">
                 <a class="main-title" href="index.html">WIKL</a>
             </td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
                 <a class="sign-in" href="signIn.html">signIn</a>
             </td>
@@ -27,25 +31,62 @@
 <hr class="top-bar">
     
     
-<div class="signIn-body">
-    <div class="signIn-box">
+<div class="info-body">
+    <div class="info-box">
         <div>
-            <h3>로그인</h3>
+            <h2 style="margin-bottom: -15px;">황인범</h2>
+            <h5>Hwang In-Beom</h5>
+        </div>
+        <div class="info-image-box">
+            <div class="info-image1">
+                <img src="올림피아코스아이콘.png" width="400px">
+            </div>
+            <div class="info-image2">
+                <img src="인범사진.webp" width="350px">
+            </div>
         </div>
         <div>
-            ID 입력 : <input class="id-input" type="text" value="" placeholder="아이디를 입력하세요">
+            소속팀 :<br> 올림피아코스 FC
         </div>
         <div>
-            비밀 번호 : <input class="password-input" type="password" value="" placeholder="비밀번호를 입력하세요">
+            출생 :<br> 1996년 9월 20일 (26세) 대전광역시 서구 갈마동
         </div>
         <div>
-            <input type="submit" value="로그인"> 
+            신체 :<br> 키 177cm / 체중 70kg
         </div>
         <div>
-            계정이 없다면? <a href="signUp.html"><input type="button" value="회원가입"></a>
+            포지션 :<br> 중앙 미드필더, 공격형 미드필더, 수비형 미드필더
+        </div>
+        <div>
+            주발 :<br> 오른발(양발)
+        </div>
+        <div>
+            플레이스타일 :<br>미드필더인 황인범은 양발을 다 잘 쓰며 영리한 경기 운영, 정확하고 날카롭게 찔러주는 패스, 팀에 빠르게 적응하는 적응력이 뛰어나며,시야가 넓고, 상대를 속이는 페인트 동작이 적절하며, 슛 능력 역시 뛰어나 상대편 입장에서 상당히 껄끄러운 플레이 스타일을 갖고 있으며, 이런 장점은 황인범이 공격형 미드필더로 기용될 때 더 극대화된다.
+        </div>
+        <div>
+            등번호 :<br> 국가대표 6번, 클럽팀 33번
+        </div>
+        <div>
+            팀 커리어 : <br>대전 시티즌 (2015~2018)
+            -> 아산 무궁화 (2018 / 군 복무) 
+            -> 밴쿠버 화이트캡스 FC (2019~2020)
+            -> FC 루빈 카잔 (2020~2022)
+            -> FC 서울 (2022 / 임대)
+            -> 올림피아코스 FC (2022~ )
+        </div>
+        <div>
+            국가대표 :<br>  43경기 5골 (대한민국 / 2018~)
+        </div>
+        <div>
+            SNS : <br>
+            <a href="https://www.instagram.com/inbeom_hwang6/"><img src="인스타.svg" width="30px" style="vertical-align: middle;"></a>
+            | <a href=""><img src="페이스북.svg" width="30px" style="vertical-align: middle;"></a>
+        </div>
+        <div>
+            응원가 : <br><input type="button" value="응원가 들어보기" style="padding: 10px; border-radius: 5px; cursor: pointer;">
         </div>
     </div>
-
+<audio src=""></audio>
 </div>
 
 
@@ -62,14 +103,28 @@
  </footer>
 
 
-
-
-
-
-
  <script>
 
+var mode = 0 //일반모드
+    //다크모드 코드
+        document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
+            if(mode==0){
+                document.body.style.backgroundColor="#333333";
+                document.getElementsByClassName('main-title')[0].style.color="white";
+                document.getElementsByClassName('sign-in')[0].style.color="white";
+                document.getElementsByClassName('sign-up')[0].style.color="white";
+                document.getElementsByTagName('footer')[0].style.color="white";
+                mode = 1;
+            }
 
-
+            else if(mode==1){
+                document.body.style.backgroundColor="#fafbfc";
+                document.getElementsByClassName('main-title')[0].style.color="black";
+                document.getElementsByClassName('sign-in')[0].style.color="black";
+                document.getElementsByClassName('sign-up')[0].style.color="black";
+                document.getElementsByTagName('footer')[0].style.color="black";
+                mode = 0;
+            }
+        });
  </script>
 </html>
