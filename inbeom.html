@@ -80,13 +80,17 @@
         <div>
             SNS : <br>
             <a href="https://www.instagram.com/inbeom_hwang6/"><img src="인스타.svg" width="30px" style="vertical-align: middle;"></a>
-            | <a href=""><img src="페이스북.svg" width="30px" style="vertical-align: middle;"></a>
         </div>
         <div>
-            응원가 : <br><input type="button" value="응원가 들어보기" style="padding: 10px; border-radius: 5px; cursor: pointer;">
+            좋아요 : <br><input class="like-button" type="image" src="좋아요.jpg" width="45px" style="vertical-align: middle; border-radius: 16px;"> 
+            <span class="like-count"></span>&nbsp;
+            
+            <input class="like-button" type="image" src="싫어요.jpg" width="45px" style="vertical-align: middle; border-radius: 16px;">
+            <span class="like-count"></span>&nbsp;
+            
+            <img class="emotion" src="soso.png" width="45px" style="vertical-align: bottom;">
         </div>
     </div>
-<audio src=""></audio>
 </div>
 
 
@@ -126,5 +130,36 @@ var mode = 0 //일반모드
                 mode = 0;
             }
         });
+
+        //좋아요기능
+        likeCount = 0;
+        hateCount = 0;
+        document.getElementsByClassName('like-count')[0].innerHTML=likeCount;
+        document.getElementsByClassName('like-count')[1].innerHTML=hateCount;
+
+        document.getElementsByClassName('like-button')[0].addEventListener('click',function(){
+            likeCount+=1;
+            document.getElementsByClassName('like-count')[0].innerHTML=likeCount;
+            changeEmotion()
+        })
+        
+        document.getElementsByClassName('like-button')[1].addEventListener('click',function(){
+            hateCount+=1;
+            document.getElementsByClassName('like-count')[1].innerHTML=hateCount;
+            changeEmotion()
+        })
+
+        //표정바뀜
+        function changeEmotion(){
+            if(likeCount==hateCount){
+                document.getElementsByClassName('emotion')[0].src="soso.png"
+            }
+            else if(likeCount > hateCount){
+                document.getElementsByClassName('emotion')[0].src="happy.png"
+            }
+            else if(likeCount < hateCount){
+                document.getElementsByClassName('emotion')[0].src="sad.png"
+            }
+        }
  </script>
 </html>
