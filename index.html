@@ -16,11 +16,15 @@
             <td class="dark-title" style="vertical-align: bottom; text-align: left; font-size: 18px;">
                 Dark
             </td>  
-            <td></td><td></td><td></td>
+            <td></td><td></td><td>
+                
+            </td>
             <td id="user-name">
                 <a class="main-title" href="index.html">WIKL</a>
             </td>
-            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            <td>
+                <img src="축구공.jpg" width="50px;" style="border-radius: 30px;">
+            </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
                 <a class="sign-in" href="signIn.html">signIn</a>
             </td>
@@ -195,7 +199,7 @@
 
 <div class="song-title" style="width : 1138px; height:50px; float: left;">
 
-<h3>응원가 들어보기</h3>
+<h3>응원가 들어보기 <input type="button" value="stop" onclick="pauseMusic()" style="padding:4px"></h3>
 <!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
 <audio id="kangin-music" src=""></audio>
 <audio id="minjae-music" src="김민재응원가.mp3"></audio>
@@ -235,7 +239,7 @@
     // },5000)
 
     //지도상태 0,1인 경우로 나눔
-    //querySelectorAlll은 hover같은 css선택자의 가상 클래스도 가져올 수 있다.
+    //querySelectorAlll은 hover같은 css선택자의 가상 클래스도 가져올 수 있다. 
 
     var mode = 0 //일반모드
     //다크모드 코드
@@ -305,7 +309,8 @@
 
 
 
-     //맵 버젼
+
+    //맵 버젼
     var map = 0;
 
     //지도위 리그 아이콘 다 지우는 함수
@@ -461,7 +466,7 @@
     //팀
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseover',function(){
         if(map == 1){
-            document.getElementsByClassName('nav-box')[0].innerHTML="토트넘 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='토트넘아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseout',function(){
@@ -469,7 +474,7 @@
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseover',function(){
         if(map == 1){
-            document.getElementsByClassName('nav-box')[0].innerHTML="울브스 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='울버햄튼아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseout',function(){
@@ -477,7 +482,7 @@
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseover',function(){
         if(map == 2){
-            document.getElementsByClassName('nav-box')[0].innerHTML="마요르카 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마요르카아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseout',function(){
@@ -485,7 +490,7 @@
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseover',function(){
         if(map == 3){
-            document.getElementsByClassName('nav-box')[0].innerHTML="마인츠 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마인츠아이콘.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseout',function(){
@@ -493,7 +498,7 @@
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseover',function(){
         if(map == 4){
-            document.getElementsByClassName('nav-box')[0].innerHTML="나폴리 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='나폴리아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }  
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseout',function(){
@@ -501,7 +506,7 @@
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseover',function(){
         if(map == 5){
-            document.getElementsByClassName('nav-box')[0].innerHTML="셀틱 설명"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='셀틱아이콘.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseout',function(){
@@ -509,7 +514,7 @@
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseover',function(){
         if(map == 6){
-            document.getElementsByClassName('nav-box')[0].innerHTML="올림피아코스 설명"  
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='올림피아코스아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseout',function(){
@@ -566,6 +571,7 @@
     
 
     //이미지 클릭하면 응원가 나옴
+
     document.getElementsByClassName('bottom-image')[0].addEventListener('click',function(){
         document.getElementById('kangin-music').play();
     });
@@ -575,6 +581,15 @@
     document.getElementsByClassName('bottom-image')[2].addEventListener('click',function(){
         document.getElementById('son-music').play();
     });
+    //정지기능
+    function pauseMusic(){
+        document.getElementById('kangin-music').pause();
+        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
+        document.getElementById('minjae-music').pause();
+        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
+        document.getElementById('son-music').pause();
+        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
+    }
 
 
  </script>
