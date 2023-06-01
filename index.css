@@ -13,7 +13,7 @@
     font-family :'Times New Roman', Times, serif;
     text-shadow : 2px 2px 5px black;
     font-size: 58px;
-    margin-left: 15px;
+    
 }
 
 .sign-in{
@@ -104,11 +104,12 @@ body{
 aside{
     float: left;
     border-color: black;
-    width: 145px;
+    width: 150px;
     height: 830px;
     border-radius: 6px;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 0 2px 0 rgba(0,0,0,.15);
     background-color: white;
+    font-size: 15px;
     
 }
 .leage-image{
@@ -124,7 +125,11 @@ aside{
 
 .aside-list{
     margin-top: 12px;
-    margin-left: 12px;
+    margin-left: 2px;
+}
+.aside-list a{
+    text-decoration: none;
+    color: black;
 }
 .aside-list li:hover{
     text-shadow : 3px 3px 5px black;
@@ -339,7 +344,7 @@ section{
 /* details 박스 */
 .nav-box{
     width: 390px;
-    height: 650px;
+    height: 700px;
     float: left;
     text-align: center;
     margin-left: 10px;
