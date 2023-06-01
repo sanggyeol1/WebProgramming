@@ -51,7 +51,7 @@
      
 
     <aside>   
-    <div style="text-align: center; margin-top: 12px;"><i>공식 홈페이지</i></div>
+    <div style="text-align: center; margin-top: 12px;"><i>리그 공식 홈페이지</i></div>
     <div>
     <a href="https://www.premierleague.com/matchweek/7862/blog" target="_blank"><img class="leage-image" src="epl.png" width="50px"></a>
     <a href="https://www.laliga.com/en-GB" target="_blank"><img class="leage-image" src="laliga.png" width="50px"></a>
@@ -63,18 +63,19 @@
 
     <div class="aside-list">
         <details>
-        <summary class="aside-league">리그</summary>
+        <summary class="aside-league"><i>팀 공식 홈페이지</i></summary>
             <ul>
-            <li class="laliga">라리가</li>
-            <li class="epl">EPL</li>
-            <li class="bundes">분데스리가</li>
-            <li class="serie">세리에a</li>
-            <li class="greece">수페르리가</li>
-            <li class="scotish">스코티시 프리미어십</li>
+            <li><a href="https://www.tottenhamhotspur.com/">토트넘 홋스퍼</a></li>
+            <li><a href="https://www.wolves.co.uk/">울버햄튼 FC</a></li>
+            <li><a href="https://www.rcdmallorca.es/">RCD 마요르카</a></li>
+            <li><a href="https://www.mainz05.de/en/">FSV 마인츠 05</a></li>
+            <li><a href="https://sscnapoli.it/">SSC 나폴리</a></li>
+            <li><a href="https://www.celticfc.com/">셀틱 FC</a></li>
+            <li><a href="https://www.olympiacos.org/en/">올림피아코스</a></li>
             </ul>
         </details>
         <details>
-            <summary class="aside-player">선수들</summary>
+            <summary class="aside-player"><i>선수설명</i></summary>
                 <ul>
                 <a href="son.html"><li class="aside-son">손흥민</li></a>
                 <a href="minjae.html"><li class="aside-kim">김민재</li></a>
@@ -112,19 +113,19 @@
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-bundes"></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='minjae.html'" class="table-napolli"></td><td></td><td></td><td></td><td onclick="location.href='kangin.html'" class="table-mallorca"></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-napolli"></td><td></td><td></td><td></td><td class="table-mallorca"></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='jaesung.html'" class="table-mainz"></td><td></td><td onclick="location.href='heechan.html'" class="table-wolves"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td class="table-mainz"></td><td></td><td class="table-wolves"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='inbeom.html'" class="table-olympia"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-olympia"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td onclick="location.href='son.html'" class="table-tottenham"></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-tottenham"></td><td></td><td></td><td></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td onclick="location.href='oh.html'" class="table-celtic"></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td><td class="table-laliga"></td><td></td><td></td><td></td><td></td><td class="table-celtic"></td><td class="table-serie"></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
             <tr>
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="table-greece"></td><td></td>
@@ -138,19 +139,19 @@
         </table>
         
         <table class="news-table">
-            <caption class="news-caption">News</caption>
+            <caption class="news-caption">News <input class="stop-news" type="button" value="Stop" onclick="newsStop()" style="padding:5px"></caption>
             <tr>
                 <td>
                 <div>
-                    <a href="https://sports.news.naver.com/news?oid=413&aid=0000158773">
-                        <img  class="first-news" src="kanginnews.png" width="295px" height="97%">
+                    <a class="first-news-link" href="https://sports.news.naver.com/news?oid=108&aid=0003148295">
+                        <img class="first-news" src="kanginnews.png" width="295px" height="97%">
                     </a>
                 </div>
                 </td>
                 <td>
                 <div>
-                    <a href="https://sports.news.naver.com/news?oid=108&aid=0003148295">
-                        <img  class="second-news" src="sonnews.png" width="295px" height="97%">
+                    <a class="second-news-link" href="https://sports.news.naver.com/news?oid=413&aid=0000158773">
+                        <img class="second-news" src="sonnews.png" width="295px" height="97%">
                     </a>
                 </div>
                 </td>
@@ -162,10 +163,7 @@
      </section>
 
      <div class="nav-box">
-        <div>리그명 : </div>
-        <div>연고지 : </div>
-        <div>역사 : </div>
-        <div>주요선수 : </div>
+        
      </div>
 
 
@@ -199,7 +197,7 @@
 
 <div class="song-title" style="width : 1138px; height:50px; float: left;">
 
-<h3>응원가 들어보기 <input type="button" value="stop" onclick="pauseMusic()" style="padding:4px"></h3>
+<h3>응원가 들어보기 <input type="button" value="stop" onclick="pauseMusic()" style="padding:5px"></h3>
 <!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
 <audio id="kangin-music" src=""></audio>
 <audio id="minjae-music" src="김민재응원가.mp3"></audio>
@@ -276,36 +274,36 @@
 
 
     //aside 선수이름 누르면 맵,설명 변화
-    document.getElementsByClassName('epl')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
-        clearIcon();
-    });
-    document.getElementsByClassName('laliga')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
-        clearIcon();
-    });
-    document.getElementsByClassName('bundes')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
-        clearIcon();
-    });
-    document.getElementsByClassName('serie')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
-        clearIcon();
-    });
-    document.getElementsByClassName('scotish')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
-        clearIcon();
-    });
-    document.getElementsByClassName('greece')[0].addEventListener('click',function(){
-        document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
-        document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
-        clearIcon();
-    });
+    // document.getElementsByClassName('epl')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
+    //     clearIcon();
+    // });
+    // document.getElementsByClassName('laliga')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
+    //     clearIcon();
+    // });
+    // document.getElementsByClassName('bundes')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
+    //     clearIcon();
+    // });
+    // document.getElementsByClassName('serie')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
+    //     clearIcon();
+    // });
+    // document.getElementsByClassName('scotish')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
+    //     clearIcon();
+    // });
+    // document.getElementsByClassName('greece')[0].addEventListener('click',function(){
+    //     document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
+    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
+    //     clearIcon();
+    // });
 
 
 
@@ -353,8 +351,8 @@
         if(map==0){
             document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
             clearIcon();
-            document.getElementsByClassName('table-tottenham')[0].style.backgroundImage="url(토트넘아이콘.png)";
-            document.getElementsByClassName('table-wolves')[0].style.backgroundImage="url(울버햄튼아이콘.png)";
+            document.getElementsByClassName('table-tottenham')[0].style.backgroundImage="url(토트넘아이콘.jpg)";
+            document.getElementsByClassName('table-wolves')[0].style.backgroundImage="url(울버햄튼아이콘.jpg)";
             map =1;
         }
     });
@@ -415,7 +413,7 @@
 
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='epl.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='epl.png' width='350px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>프리미어 리그 (Premier League)</td></tr><tr><td>UEFA 랭킹</td><td>1위</td></tr><tr><td>창설</td><td>1992년 2월 20일 (31주년)</td></tr><tr><td>코리안 리거</td><td>손흥민, 황희찬</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td>맨체스터 시티 FC (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>맨체스터 유나이티드 FC (13회)</td></tr><tr><td>회장</td><td>Richard Masters</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseout',function(){
@@ -423,7 +421,7 @@
     })
     document.getElementsByClassName('table-laliga')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='laliga.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='laliga.png' width='350px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>UEFA 랭킹</td><td>2위</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-laliga')[0].addEventListener('mouseout',function(){
@@ -431,7 +429,7 @@
     })
     document.getElementsByClassName('table-serie')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='serie.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='serie.png' width='250px;'><table border='1' style='text-align: center; width : 380px; height:250px; margin-left:5px'><tr><td>정식 명칭</td><td>세리에 A</td></tr><tr><td>UEFA 랭킹</td><td>4위</td></tr><tr><td>창설</td><td>1898년</td></tr><tr><td>코리안 리거</td><td>김민재</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td>SSC 나폴리 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>유벤투스 FC (36회)</td></tr><tr><td>회장</td><td>마우리치오 베레타</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-serie')[0].addEventListener('mouseout',function(){
@@ -439,7 +437,7 @@
     })
     document.getElementsByClassName('table-bundes')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='bundes.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='bundes.png' width='380px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>분데스리가</td></tr><tr><td>UEFA 랭킹</td><td>3위</td></tr><tr><td>창설</td><td>1963년 - 분데스리가</td></tr><tr><td>코리안 리거</td><td>이재성</td></tr><tr><td>참가 구단 수</td><td>18개 팀</td></tr><tr><td>최근 우승 구단</td><td>FC 바이에른 뮌헨(2022-23)</td></tr><tr><td>최다 우승 구단</td><td>FC 바이에른 뮌헨(32회)</td></tr><tr><td>운영</td><td>도이체 푸스발 리가</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-bundes')[0].addEventListener('mouseout',function(){
@@ -447,7 +445,7 @@
     })
     document.getElementsByClassName('table-scotish')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='scotish.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>" 
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='scotish.jpg' width='380px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>스코티시 프리미어십</td></tr><tr><td>UEFA 랭킹</td><td>9위</td></tr><tr><td>창설</td><td>1890년 (스코티시 풋볼 리그)</td></tr><tr><td>코리안 리거</td><td>오현규</td></tr><tr><td>참가 구단 수</td><td>12개 팀</td></tr><tr><td>최근 우승 구단</td><td>셀틱 FC (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레인저스 FC (55회)</td></tr><tr><td>회장</td><td>Neil Doncaster</td></tr></table></div>" 
         }
     })
     document.getElementsByClassName('table-scotish')[0].addEventListener('mouseout',function(){
@@ -455,7 +453,7 @@
     })
     document.getElementsByClassName('table-greece')[0].addEventListener('mouseover',function(){
         if(map==0){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='greece.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='greece.jpg' width='330px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>수페르리가 엘라다</td></tr><tr><td>UEFA 랭킹</td><td>19위</td></tr><tr><td>창설</td><td>1927년 (범그리스 챔피언십)</td></tr><tr><td>코리안 리거</td><td>황인범</td></tr><tr><td>참가 구단 수</td><td>14개 팀</td></tr><tr><td>최근 우승 구단</td><td>AEK 아테네 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>올림피아코스 FC (47회)</td></tr><tr><td>회장</td><td>테오도로스 자고라키스</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-greece')[0].addEventListener('mouseout',function(){
@@ -466,7 +464,7 @@
     //팀
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseover',function(){
         if(map == 1){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='토트넘아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='토트넘아이콘.jpg' width='380px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Tottenham Hotspur Football Club</td></tr><tr><td>별칭</td><td>스퍼스 (Spurs)</td></tr><tr><td>창단</td><td>1882년 9월 5일 (140주년)</td></tr><tr><td>연고지</td><td>런던 해링게이 구 토트넘</td></tr><tr><td>홈구장</td><td>웸블리 스타디움</td></tr><tr><td>라이벌</td><td> 아스날 FC - 북런던 더비</td></tr><tr><td>구단주</td><td>조 루이스 (Joe Lewis)</td></tr><tr><td>회장</td><td>다니엘 레비 (Daniel Levy)</td></tr><tr><td>감독</td><td>공석</td></tr><tr><td>주장</td><td>위고 요리스 (Hugo Lloris)</td></tr><tr><td>역대 한국인 선수</td><td>이영표 (2005~2008)<br>손흥민 (2015~ )</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseout',function(){
@@ -474,7 +472,7 @@
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseover',function(){
         if(map == 1){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='울버햄튼아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='울버햄튼아이콘.jpg' width='370px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Wolverhampton Wanderers Football Club</td></tr><tr><td>별칭</td><td>원더러스 (The Wanderers)</td></tr><tr><td>창단</td><td>1877년 1월 13일 (146주년)</td></tr><tr><td>연고지</td><td>웨스트 미들랜즈 주 울버햄튼</td></tr><tr><td>홈구장</td><td>몰리뉴 스타디움</td></tr><tr><td>라이벌</td><td>웨스트 브롬위치 알비온 FC - 블랙 컨트리 더비</td></tr><tr><td>구단주</td><td>푸싱 그룹</td></tr><tr><td>감독</td><td> 훌렌 로페테기 (Julen Lopetegui)</td></tr><tr><td>주장</td><td> 후벵 네베스 (Ruben Neves)</td></tr><tr><td>역대 한국인 선수</td><td>설기현 (2004~2006)<br>황희찬 (2021~)<br> 정상빈 (2022~2023)</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseout',function(){
@@ -482,7 +480,7 @@
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseover',function(){
         if(map == 2){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마요르카아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마요르카아이콘.png' width='370px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>RCD Mallorca</td></tr><tr><td>별칭</td><td>로스 베르메요네스(Los Bermellones)</td></tr><tr><td>창단</td><td>1916년 3월 5일 (107주년)</td></tr><tr><td>연고지</td><td>마요르카섬 팔마 (Palma)</td></tr><tr><td>홈구장</td><td>에스타디 마요르카 손 모시</td></tr><tr><td>라이벌</td><td>-</td></tr><tr><td>회장</td><td>앤디 콜버그 (Andy Kohlberg)</td></tr><tr><td>감독</td><td>하비에르 아기레 (Javier Aguirre)</td></tr><tr><td>주장</td><td>안토니오 라이요 (Antonio Raíllo)</td></tr><tr><td>역대 한국인 선수</td><td>기성용 (2020)<br>이강인 (2021~ )</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseout',function(){
@@ -490,7 +488,7 @@
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseover',function(){
         if(map == 3){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마인츠아이콘.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마인츠아이콘.jpg' width='320px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>1. FSV 마인츠 05</td></tr><tr><td>별칭</td><td>Die Nullfünfer (the O-Fives)</td></tr><tr><td>창단</td><td>1905년 3월 16일 (118주년)</td></tr><tr><td>연고지</td><td>독일 라인란트팔츠주 마인츠</td></tr><tr><td>홈구장</td><td>메바 아레나 </td></tr><tr><td>라이벌</td><td>아인트라흐트 프랑크푸르트 - 라인-마인 더비</td></tr><tr><td>회장</td><td>슈테판 호프만 (Stefan Hofmann)</td></tr><tr><td>감독</td><td>보 스벤손 (Bo Svensson)</td></tr><tr><td>주장</td><td>질반 비드머 (Silvan Widmer)</td></tr><tr><td>역대 한국인 선수</td><td>차두리 (2006~2007)<br>박주호 (2013~2015)<br>구자철 (2014~2015)<br>지동원 (2019~2021)<br>이재성 (2021~ )</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseout',function(){
@@ -498,7 +496,7 @@
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseover',function(){
         if(map == 4){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='나폴리아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='나폴리아이콘.png' width='330px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>SSC Napoli</td></tr><tr><td>별칭</td><td>Partenopei (파르테노페이)</td></tr><tr><td>창단</td><td>1926년 8월 25일 (96주년)</td></tr><tr><td>연고지</td><td>캄파니아 주 나폴리</td></tr><tr><td>홈구장</td><td>스타디오 디에고 아르만도 마라도나</td></tr><tr><td>라이벌</td><td>AS 로마 - 데르비 델 솔레 (Derby del Sole)</td></tr><tr><td>구단주</td><td>필마우로</td></tr><tr><td>감독</td><td>루치아노 스팔레티 (Luciano Spalletti)</td></tr><tr><td>주장</td><td>조반니 디 로렌초 (Giovanni Di Lorenzo)</td></tr><tr><td>역대 한국인 선수</td><td>김민재 (2022~ )</td></tr></table></div>"
         }  
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseout',function(){
@@ -506,7 +504,7 @@
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseover',function(){
         if(map == 5){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='셀틱아이콘.jpg' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='셀틱아이콘.jpg' width='360px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>The Celtic Football Club</td></tr><tr><td>별칭</td><td>보이즈 (The Bhoys)</td></tr><tr><td>창단</td><td>1887년 11월 6일 (135주년)</td></tr><tr><td>연고지</td><td>글래스고</td></tr><tr><td>홈구장</td><td>셀틱 파크 (Celtic Park)</td></tr><tr><td>라이벌</td><td>레인저스 FC - 올드 펌</td></tr><tr><td>소유주</td><td>셀틱 공개유한회사</td></tr><tr><td>감독</td><td>엔지 포스테코글루</td></tr><tr><td>주장</td><td>칼럼 맥그리거 (Callum McGregor)</td></tr><tr><td>역대 한국인 선수</td><td>기성용 (2010~2012)<br>차두리 (2010~2012)<br>오현규 (2023~ )</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseout',function(){
@@ -514,26 +512,81 @@
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseover',function(){
         if(map == 6){
-            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='올림피아코스아이콘.png' width='300px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='올림피아코스아이콘.png' width='350px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Olympiacos FC</td></tr><tr><td>별칭</td><td>Τhrylos (전설)</td></tr><tr><td>창단</td><td>1925년 3월 10일 (98주년)</td></tr><tr><td>연고지</td><td>피레아스 (Piraeus)</td></tr><tr><td>홈구장</td><td>요르요스 카라이스카키스 스타디움</td></tr><tr><td>라이벌</td><td>파나티나이코스 FC - 영원한 적들의 더비</td></tr><tr><td>구단주</td><td>에반겔로스 마리나키스 (Evangelos Marinakis)</td></tr><tr><td>감독</td><td>호세 아니고 (José Anigo)</td></tr><tr><td>주장</td><td>유세프 엘아라비 (Youssef El-Arabi)</td></tr><tr><td>역대 한국인 선수</td><td>황인범 (2022~ )<br>황의조 (2022~2023)</td></tr></table></div>"
         }
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseout',function(){
         clearDetails();
     })
+
+
+
+    //팀 클릭하면 선수설명창 띄워짐
+    document.getElementsByClassName('table-tottenham')[0].addEventListener('click',function(){
+        if(map == 1){
+            window.open('son.html');
+        }
+    })
+    
+    document.getElementsByClassName('table-wolves')[0].addEventListener('click',function(){
+        if(map == 1){
+            window.open('heechan.html');
+        }
+    })
+    
+    document.getElementsByClassName('table-mallorca')[0].addEventListener('click',function(){
+        if(map == 2){
+            window.open('kangin.html');
+        }
+    })
+    
+    document.getElementsByClassName('table-mainz')[0].addEventListener('click',function(){
+        if(map == 3){
+            window.open('jaesung.html');
+        }
+    })
+    
+    document.getElementsByClassName('table-napolli')[0].addEventListener('click',function(){
+        if(map == 4){
+            window.open('minjae.html');
+        }  
+    })
+    
+    document.getElementsByClassName('table-celtic')[0].addEventListener('click',function(){
+        if(map == 5){
+            window.open('oh.html');
+        }
+    })
+    
+    document.getElementsByClassName('table-olympia')[0].addEventListener('click',function(){
+        if(map == 6){
+            window.open('inbeom.html');
+        }
+    })
+    
     
 
     //뉴스 화면전환 코드
-    setInterval(function(){ 
+    var newsMoving = setInterval(function(){ 
         var now = new Date();
         if(now.getSeconds()%2==1){
-            document.getElementsByClassName('first-news')[0].src="sonnews.png"
-            document.getElementsByClassName('second-news')[0].src="kanginnews.png"
-        }
-        else{
             document.getElementsByClassName('first-news')[0].src="kanginnews.png"
+            document.getElementsByClassName('first-news-link')[0].href="https://sports.news.naver.com/news?oid=108&aid=0003148295"
             document.getElementsByClassName('second-news')[0].src="sonnews.png"
+            document.getElementsByClassName('second-news-link')[0].href="https://sports.news.naver.com/news?oid=413&aid=0000158773"
         }
-    },3000);
+        else if(now.getSeconds()%2==0){
+            document.getElementsByClassName('first-news')[0].src="minjaenews.png"
+            document.getElementsByClassName('first-news-link')[0].href="https://sports.chosun.com/news/ntype.htm?id=202305290100218910028373&servicedate=20230528"
+            document.getElementsByClassName('second-news')[0].src="ohnews.png"
+            document.getElementsByClassName('second-news-link')[0].href="http://sportsworldi.segye.com/newsView/20230528503499"
+        }
+    },1000);
+
+    //뉴스 멈춤코드
+    function newsStop(){
+            clearInterval(newsMoving);
+    }
 
     //광고배너 이미지전환코드
     // setInterval(function(){
@@ -555,10 +608,11 @@
 
 
     //광고 숨기기 기능
+    //href=""을 비워놓으면 눌렀을 때 새로운 창이 떠서 none을 줌
     document.getElementsByClassName('ad-delete')[0].addEventListener('click',function(){
         document.getElementsByClassName('ad-image')[0].src="none";
         document.getElementsByClassName('ad-link')[0].href="none"
-        
+
     })
     document.getElementsByClassName('ad-delete')[1].addEventListener('click',function(){
         document.getElementsByClassName('ad-image')[1].src="none";
@@ -571,7 +625,6 @@
     
 
     //이미지 클릭하면 응원가 나옴
-
     document.getElementsByClassName('bottom-image')[0].addEventListener('click',function(){
         document.getElementById('kangin-music').play();
     });
@@ -584,11 +637,10 @@
     //정지기능
     function pauseMusic(){
         document.getElementById('kangin-music').pause();
-        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
+
         document.getElementById('minjae-music').pause();
-        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
+
         document.getElementById('son-music').pause();
-        document.getElementById('kangin-music').audio.currentTime = 0; // 재생 위치를 처음으로 설정
     }
 
 
