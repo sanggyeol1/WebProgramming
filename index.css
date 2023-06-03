@@ -4,15 +4,20 @@
 
 
 .top-box{
-    width: 95%;
+    width: 85%;
     text-align: center;
+    position : fixed;
+    background-color: #fafbfc;
+    margin-top :-10px;
+    padding-bottom : -10px;
+    margin-left : -20px;
 }
 .main-title{
     color: black;
     text-decoration: none;
     font-family :'Times New Roman', Times, serif;
     text-shadow : 2px 2px 5px black;
-    font-size: 58px;
+    font-size: 54px;
     
 }
 
@@ -41,7 +46,7 @@
     border-style: solid;
     border-color: white;
     border-width: 1px;
-
+    margin-bottom : -1px;
 }
 
 /* 검색창 */
@@ -98,6 +103,7 @@ body{
     margin-right: 9%;
     width : 1200px;
 }
+
 
 
 
@@ -177,7 +183,7 @@ section{
     border-radius: 6px;
 }
 .table-renew:hover{
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px 2px black;
     cursor: pointer;
 }
 
@@ -188,10 +194,7 @@ section{
     border-radius: 5px;
 }
 
-.table-epl:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-laliga{
     background-image: url("laliga.png");
@@ -201,10 +204,7 @@ section{
     /* 라리가 아이콘이 반복되어서 넣음 */
 }
 
-.table-laliga:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-bundes{
     background-image: url("bundes.png");
@@ -212,10 +212,7 @@ section{
     border-radius: 5px;
 }
 
-.table-bundes:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-serie{
     background-image: url("serie.png");
@@ -223,10 +220,7 @@ section{
     border-radius: 5px;
 }
 
-.table-serie:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-greece{
     background-image: url("greece.jpg");
@@ -234,10 +228,6 @@ section{
     border-radius: 5px;
 }
 
-.table-greece:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
 
 .table-scotish{
     background-image: url("scotish.jpg");
@@ -245,74 +235,50 @@ section{
     border-radius: 5px;
 }
 
-.table-scotish:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 /* 테이블 위 팀 아이콘 */
 .table-mallorca{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-mallorca:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-tottenham{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-tottenham:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-wolves{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-wolves:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-celtic{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-celtic:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-mainz{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-mainz:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-napolli{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-napolli:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 .table-olympia{
     background-size: 100% 100%;
     border-radius: 5px;
 }
-.table-olympia:hover{
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
-}
+
 
 
 /* 뉴스테이블 */
@@ -392,11 +358,11 @@ section{
 
 .bottom-image{
     margin : 10px;
-    border-radius: 6px;
+    border-radius: 14px;
 }
 
 .bottom-image:hover{
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 20px 4px black;
     cursor: pointer;
 }
 
