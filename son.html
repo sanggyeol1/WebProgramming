@@ -26,9 +26,12 @@
             </td>
         </tr>
     </table>
+    <hr class="top-bar">
 </div>
-    
-<hr class="top-bar">
+<div style="height: 85px;">
+
+</div>
+
     
     
 <div class="info-body">
@@ -118,6 +121,7 @@ var mode = 0 //일반모드
     //다크모드 코드
         document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
             if(mode==0){
+                document.getElementsByClassName('top-box')[0].style.backgroundColor="#333333";
                 document.body.style.backgroundColor="#333333";
                 document.getElementsByClassName('main-title')[0].style.color="white";
                 document.getElementsByClassName('sign-in')[0].style.color="white";
@@ -127,6 +131,7 @@ var mode = 0 //일반모드
             }
 
             else if(mode==1){
+                document.getElementsByClassName('top-box')[0].style.backgroundColor="#fafbfc";
                 document.body.style.backgroundColor="#fafbfc";
                 document.getElementsByClassName('main-title')[0].style.color="black";
                 document.getElementsByClassName('sign-in')[0].style.color="black";
