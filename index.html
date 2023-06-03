@@ -11,7 +11,7 @@
         <tr>
             
             <td>
-                <input class="dark-mode" type="image" src="renew.png" width="80%" style="border-radius: 24px; vertical-align: middle; margin-right: -20px;">
+                <input class="dark-mode" type="image" src="renew.png" width="60%" style="border-radius: 24px; vertical-align: middle; margin-right: -20px;">
             </td>
             <td class="dark-title" style="vertical-align: bottom; text-align: left; font-size: 18px;">
                 Dark
@@ -23,7 +23,7 @@
                 <a class="main-title" href="index.html">WIKL</a>
             </td>
             <td>
-                <img src="축구공.jpg" width="50px;" style="border-radius: 30px;">
+                <img src="축구공.jpg" width="40px;" style="border-radius: 30px; vertical-align: bottom;">
             </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
             <td>
                 <a class="sign-in" href="signIn.html">signIn</a>
@@ -34,9 +34,14 @@
             </td>
         </tr>
     </table>
+    <hr class="top-bar">
+    
+</div>
+<div style="height: 85px;">
+
 </div>
     
-<hr class="top-bar">
+
     
     <header>
         
@@ -199,7 +204,7 @@
 
 <h3>응원가 들어보기 <input type="button" value="stop" onclick="pauseMusic()" style="padding:5px"></h3>
 <!-- 오디오 형식 : <audio src="" controls autoplay loop></audio> -->
-<audio id="kangin-music" src="이강인응원가.mp3"></audio>
+<audio id="kangin-music" src=""></audio>
 <audio id="minjae-music" src="김민재응원가.mp3"></audio>
 <audio id="son-music" src="손흥민응원가.mp3"></audio>
 </div>
@@ -243,6 +248,7 @@
     //다크모드 코드
         document.getElementsByClassName("dark-mode")[0].addEventListener("click",function(){
             if(mode==0){
+                document.getElementsByClassName('top-box')[0].style.backgroundColor="#333333";
                 document.body.style.backgroundColor="#333333";
                 document.getElementsByClassName('dark-title')[0].style.color="white"
                 document.getElementsByClassName('dark-title')[0].innerHTML="Light"
@@ -258,6 +264,7 @@
             }
 
             else if(mode==1){
+                document.getElementsByClassName('top-box')[0].style.backgroundColor="#fafbfc";
                 document.body.style.backgroundColor="#fafbfc";
                 document.getElementsByClassName('dark-title')[0].style.color="black"
                 document.getElementsByClassName('dark-title')[0].innerHTML="Dark"
@@ -409,55 +416,81 @@
     }
 
     //아이콘에 마우스 올리면 details에 리그, 팀 관련 설명나옴, 떼면 사라짐
+    //아이콘에 마우스 올리면 마우스 포인터 변하고 박스에 그림자 효과 부여함 떼면 사라짐
+    //원래 hover를 썼는데 자바스크립트로 바꾼 이유는 맵이 변하면 표시되지 않는 아이콘의 hover효과가 사라지지 않아서
+    
     //리그
-
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='epl.png' width='350px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>프리미어 리그 (Premier League)</td></tr><tr><td>UEFA 랭킹</td><td>1위</td></tr><tr><td>창설</td><td>1992년 2월 20일 (31주년)</td></tr><tr><td>코리안 리거</td><td>손흥민, 황희찬</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td>맨체스터 시티 FC (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>맨체스터 유나이티드 FC (13회)</td></tr><tr><td>회장</td><td>Richard Masters</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-laliga')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='laliga.png' width='350px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>라리가(LaLiga)</td></tr><tr><td>UEFA 랭킹</td><td>2위</td></tr><tr><td>창설</td><td>1929년</td></tr><tr><td>코리안 리거</td><td>이강인</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td> FC 바르셀로나 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레알 마드리드 CF (35회)</td></tr><tr><td>회장</td><td>하비에르 테바스</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-laliga')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-serie')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='serie.png' width='250px;'><table border='1' style='text-align: center; width : 380px; height:250px; margin-left:5px'><tr><td>정식 명칭</td><td>세리에 A</td></tr><tr><td>UEFA 랭킹</td><td>4위</td></tr><tr><td>창설</td><td>1898년</td></tr><tr><td>코리안 리거</td><td>김민재</td></tr><tr><td>참가 구단 수</td><td>20개 팀</td></tr><tr><td>최근 우승 구단</td><td>SSC 나폴리 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>유벤투스 FC (36회)</td></tr><tr><td>회장</td><td>마우리치오 베레타</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-serie')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-bundes')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='bundes.png' width='380px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>분데스리가</td></tr><tr><td>UEFA 랭킹</td><td>3위</td></tr><tr><td>창설</td><td>1963년 - 분데스리가</td></tr><tr><td>코리안 리거</td><td>이재성</td></tr><tr><td>참가 구단 수</td><td>18개 팀</td></tr><tr><td>최근 우승 구단</td><td>FC 바이에른 뮌헨(2022-23)</td></tr><tr><td>최다 우승 구단</td><td>FC 바이에른 뮌헨(32회)</td></tr><tr><td>운영</td><td>도이체 푸스발 리가</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-bundes')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-scotish')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='scotish.jpg' width='380px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>스코티시 프리미어십</td></tr><tr><td>UEFA 랭킹</td><td>9위</td></tr><tr><td>창설</td><td>1890년 (스코티시 풋볼 리그)</td></tr><tr><td>코리안 리거</td><td>오현규</td></tr><tr><td>참가 구단 수</td><td>12개 팀</td></tr><tr><td>최근 우승 구단</td><td>셀틱 FC (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>레인저스 FC (55회)</td></tr><tr><td>회장</td><td>Neil Doncaster</td></tr></table></div>" 
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-scotish')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-greece')[0].addEventListener('mouseover',function(){
         if(map==0){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='greece.jpg' width='330px;'><table border='1' style='text-align: center; width : 380px; height:300px; margin-left:5px'><tr><td>정식 명칭</td><td>수페르리가 엘라다</td></tr><tr><td>UEFA 랭킹</td><td>19위</td></tr><tr><td>창설</td><td>1927년 (범그리스 챔피언십)</td></tr><tr><td>코리안 리거</td><td>황인범</td></tr><tr><td>참가 구단 수</td><td>14개 팀</td></tr><tr><td>최근 우승 구단</td><td>AEK 아테네 (2022-23)</td></tr><tr><td>최다 우승 구단</td><td>올림피아코스 FC (47회)</td></tr><tr><td>회장</td><td>테오도로스 자고라키스</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-greece')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     
     
@@ -465,58 +498,86 @@
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseover',function(){
         if(map == 1){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='토트넘아이콘.jpg' width='380px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Tottenham Hotspur Football Club</td></tr><tr><td>별칭</td><td>스퍼스 (Spurs)</td></tr><tr><td>창단</td><td>1882년 9월 5일 (140주년)</td></tr><tr><td>연고지</td><td>런던 해링게이 구 토트넘</td></tr><tr><td>홈구장</td><td>웸블리 스타디움</td></tr><tr><td>라이벌</td><td> 아스날 FC - 북런던 더비</td></tr><tr><td>구단주</td><td>조 루이스 (Joe Lewis)</td></tr><tr><td>회장</td><td>다니엘 레비 (Daniel Levy)</td></tr><tr><td>감독</td><td>공석</td></tr><tr><td>주장</td><td>위고 요리스 (Hugo Lloris)</td></tr><tr><td>역대 한국인 선수</td><td>이영표 (2005~2008)<br>손흥민 (2015~ )</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-tottenham')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseover',function(){
         if(map == 1){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='울버햄튼아이콘.jpg' width='370px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Wolverhampton Wanderers Football Club</td></tr><tr><td>별칭</td><td>원더러스 (The Wanderers)</td></tr><tr><td>창단</td><td>1877년 1월 13일 (146주년)</td></tr><tr><td>연고지</td><td>웨스트 미들랜즈 주 울버햄튼</td></tr><tr><td>홈구장</td><td>몰리뉴 스타디움</td></tr><tr><td>라이벌</td><td>웨스트 브롬위치 알비온 FC - 블랙 컨트리 더비</td></tr><tr><td>구단주</td><td>푸싱 그룹</td></tr><tr><td>감독</td><td> 훌렌 로페테기 (Julen Lopetegui)</td></tr><tr><td>주장</td><td> 후벵 네베스 (Ruben Neves)</td></tr><tr><td>역대 한국인 선수</td><td>설기현 (2004~2006)<br>황희찬 (2021~)<br> 정상빈 (2022~2023)</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-wolves')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseover',function(){
         if(map == 2){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마요르카아이콘.png' width='370px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>RCD Mallorca</td></tr><tr><td>별칭</td><td>로스 베르메요네스(Los Bermellones)</td></tr><tr><td>창단</td><td>1916년 3월 5일 (107주년)</td></tr><tr><td>연고지</td><td>마요르카섬 팔마 (Palma)</td></tr><tr><td>홈구장</td><td>에스타디 마요르카 손 모시</td></tr><tr><td>라이벌</td><td>-</td></tr><tr><td>회장</td><td>앤디 콜버그 (Andy Kohlberg)</td></tr><tr><td>감독</td><td>하비에르 아기레 (Javier Aguirre)</td></tr><tr><td>주장</td><td>안토니오 라이요 (Antonio Raíllo)</td></tr><tr><td>역대 한국인 선수</td><td>기성용 (2020)<br>이강인 (2021~ )</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-mallorca')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseover',function(){
         if(map == 3){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='마인츠아이콘.jpg' width='320px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>1. FSV 마인츠 05</td></tr><tr><td>별칭</td><td>Die Nullfünfer (the O-Fives)</td></tr><tr><td>창단</td><td>1905년 3월 16일 (118주년)</td></tr><tr><td>연고지</td><td>독일 라인란트팔츠주 마인츠</td></tr><tr><td>홈구장</td><td>메바 아레나 </td></tr><tr><td>라이벌</td><td>아인트라흐트 프랑크푸르트 - 라인-마인 더비</td></tr><tr><td>회장</td><td>슈테판 호프만 (Stefan Hofmann)</td></tr><tr><td>감독</td><td>보 스벤손 (Bo Svensson)</td></tr><tr><td>주장</td><td>질반 비드머 (Silvan Widmer)</td></tr><tr><td>역대 한국인 선수</td><td>차두리 (2006~2007)<br>박주호 (2013~2015)<br>구자철 (2014~2015)<br>지동원 (2019~2021)<br>이재성 (2021~ )</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-mainz')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseover',function(){
         if(map == 4){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='나폴리아이콘.png' width='330px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>SSC Napoli</td></tr><tr><td>별칭</td><td>Partenopei (파르테노페이)</td></tr><tr><td>창단</td><td>1926년 8월 25일 (96주년)</td></tr><tr><td>연고지</td><td>캄파니아 주 나폴리</td></tr><tr><td>홈구장</td><td>스타디오 디에고 아르만도 마라도나</td></tr><tr><td>라이벌</td><td>AS 로마 - 데르비 델 솔레 (Derby del Sole)</td></tr><tr><td>구단주</td><td>필마우로</td></tr><tr><td>감독</td><td>루치아노 스팔레티 (Luciano Spalletti)</td></tr><tr><td>주장</td><td>조반니 디 로렌초 (Giovanni Di Lorenzo)</td></tr><tr><td>역대 한국인 선수</td><td>김민재 (2022~ )</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }  
     })
     document.getElementsByClassName('table-napolli')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseover',function(){
         if(map == 5){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='셀틱아이콘.jpg' width='360px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>The Celtic Football Club</td></tr><tr><td>별칭</td><td>보이즈 (The Bhoys)</td></tr><tr><td>창단</td><td>1887년 11월 6일 (135주년)</td></tr><tr><td>연고지</td><td>글래스고</td></tr><tr><td>홈구장</td><td>셀틱 파크 (Celtic Park)</td></tr><tr><td>라이벌</td><td>레인저스 FC - 올드 펌</td></tr><tr><td>소유주</td><td>셀틱 공개유한회사</td></tr><tr><td>감독</td><td>엔지 포스테코글루</td></tr><tr><td>주장</td><td>칼럼 맥그리거 (Callum McGregor)</td></tr><tr><td>역대 한국인 선수</td><td>기성용 (2010~2012)<br>차두리 (2010~2012)<br>오현규 (2023~ )</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-celtic')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseover',function(){
         if(map == 6){
             document.getElementsByClassName('nav-box')[0].innerHTML="<div><img src='올림피아코스아이콘.png' width='350px;'><table border='1' style='text-align: center; width : 380px; margin-left:5px'><tr><td>정식 명칭</td><td>Olympiacos FC</td></tr><tr><td>별칭</td><td>Τhrylos (전설)</td></tr><tr><td>창단</td><td>1925년 3월 10일 (98주년)</td></tr><tr><td>연고지</td><td>피레아스 (Piraeus)</td></tr><tr><td>홈구장</td><td>요르요스 카라이스카키스 스타디움</td></tr><tr><td>라이벌</td><td>파나티나이코스 FC - 영원한 적들의 더비</td></tr><tr><td>구단주</td><td>에반겔로스 마리나키스 (Evangelos Marinakis)</td></tr><tr><td>감독</td><td>호세 아니고 (José Anigo)</td></tr><tr><td>주장</td><td>유세프 엘아라비 (Youssef El-Arabi)</td></tr><tr><td>역대 한국인 선수</td><td>황인범 (2022~ )<br>황의조 (2022~2023)</td></tr></table></div>"
+            this.style.cursor="pointer";
+            this.style.boxShadow="0px 0px 5px 2px black";
         }
     })
     document.getElementsByClassName('table-olympia')[0].addEventListener('mouseout',function(){
         clearDetails();
+        this.style.cursor="";
+        this.style.boxShadow="";
     })
 
 
