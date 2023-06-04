@@ -608,18 +608,18 @@
         }
     }
     var newsMoving = setInterval('newsMove()',1000);
-    var newsMode = 0;
+    var newsMode = 'move';
     //뉴스 멈춤, 재생코드
     function newsStop(){
-        if(newsMode==0){
+        if(newsMode=='move'){
             clearInterval(newsMoving);
             document.getElementsByClassName('stop-news')[0].value="Move"
-            newsMode = 1;
+            newsMode = 'stop';
             
-        }else if(newsMode == 1){
+        }else if(newsMode == 'stop'){
             newsMoving = setInterval('newsMove()',1000);
             document.getElementsByClassName('stop-news')[0].value="Stop"
-            newsMode = 0;
+            newsMode = 'move';
         }
     }
 
