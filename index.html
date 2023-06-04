@@ -232,17 +232,6 @@
 
 
  <script>
-    //안녕하세요 문구
-    // var userName = prompt("성함을 입력하세요", "홍길동");
-    // document.getElementById('user-name').innerHTML=userName+"님 안녕하세요"
-    
-    //안녕하세요 사라지게 하는 코드
-    // setTimeout(function(){
-    //   document.getElementById('user-name').innerHTML=""  
-    // },5000)
-
-    //지도상태 0,1인 경우로 나눔
-    //querySelectorAlll은 hover같은 css선택자의 가상 클래스도 가져올 수 있다. 
 
     var mode = 0 //일반모드
     //다크모드 코드
@@ -250,84 +239,39 @@
             if(mode==0){
                 document.getElementsByClassName('top-box')[0].style.backgroundColor="#333333";
                 document.body.style.backgroundColor="#333333";
-                document.getElementsByClassName('dark-title')[0].style.color="white"
-                document.getElementsByClassName('dark-title')[0].innerHTML="Light"
-                document.getElementsByClassName('main-title')[0].style.color="white"
-                document.getElementsByClassName('sign-in')[0].style.color="white"
-                document.getElementsByClassName('sign-up')[0].style.color="white"
-                
-                document.getElementsByClassName('concrete-title')[0].style.color="white"
-                document.getElementsByClassName('ad-title')[0].style.color="white"
-                document.getElementsByClassName('song-title')[0].style.color="white"
-                document.getElementsByTagName('footer')[0].style.color="white"
+                document.getElementsByClassName('dark-title')[0].style.color="white";
+                document.getElementsByClassName('dark-title')[0].innerHTML="Light";
+                document.getElementsByClassName('main-title')[0].style.color="white";
+                document.getElementsByClassName('sign-in')[0].style.color="white";
+                document.getElementsByClassName('sign-up')[0].style.color="white";
+                document.getElementsByClassName('concrete-title')[0].style.color="white";
+                document.getElementsByClassName('ad-title')[0].style.color="white";
+                document.getElementsByClassName('song-title')[0].style.color="white";
+                document.getElementsByTagName('footer')[0].style.color="white";
                 mode = 1;
             }
-
             else if(mode==1){
                 document.getElementsByClassName('top-box')[0].style.backgroundColor="#fafbfc";
                 document.body.style.backgroundColor="#fafbfc";
-                document.getElementsByClassName('dark-title')[0].style.color="black"
-                document.getElementsByClassName('dark-title')[0].innerHTML="Dark"
-                document.getElementsByClassName('main-title')[0].style.color="black"
-                document.getElementsByClassName('sign-in')[0].style.color="black"
-                document.getElementsByClassName('sign-up')[0].style.color="black"
-                document.getElementsByClassName('concrete-title')[0].style.color="black"
-                document.getElementsByClassName('ad-title')[0].style.color="black"
-                document.getElementsByClassName('song-title')[0].style.color="black"
-                document.getElementsByTagName('footer')[0].style.color="black"
+                document.getElementsByClassName('dark-title')[0].style.color="black";
+                document.getElementsByClassName('dark-title')[0].innerHTML="Dark";
+                document.getElementsByClassName('main-title')[0].style.color="black";
+                document.getElementsByClassName('sign-in')[0].style.color="black";
+                document.getElementsByClassName('sign-up')[0].style.color="black";
+                document.getElementsByClassName('concrete-title')[0].style.color="black";
+                document.getElementsByClassName('ad-title')[0].style.color="black";
+                document.getElementsByClassName('song-title')[0].style.color="black";
+                document.getElementsByTagName('footer')[0].style.color="black";
                 mode = 0;
             }
         });
 
 
-    //aside 선수이름 누르면 맵,설명 변화
-    // document.getElementsByClassName('epl')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="epl 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(영국지도.png)"
-    //     clearIcon();
-    // });
-    // document.getElementsByClassName('laliga')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="라리가 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(스페인지도.png)"
-    //     clearIcon();
-    // });
-    // document.getElementsByClassName('bundes')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="분데스 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(독일지도.png)"
-    //     clearIcon();
-    // });
-    // document.getElementsByClassName('serie')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="세리에 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(이탈리아지도.png)"
-    //     clearIcon();
-    // });
-    // document.getElementsByClassName('scotish')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="scotish 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(스코틀랜드지도.png)"
-    //     clearIcon();
-    // });
-    // document.getElementsByClassName('greece')[0].addEventListener('click',function(){
-    //     document.getElementsByClassName('nav-box')[0].innerHTML="greece 설명";
-    //     document.getElementsByTagName('section')[0].style.backgroundImage="url(그리스지도.png)"
-    //     clearIcon();
-    // });
-
-
+    
 
 
     //맵 버젼
     var map = 0;
-
-    //지도위 리그 아이콘 다 지우는 함수
-    function clearIcon(){
-        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
-    }
-
     //renew 함수
     function renewMap(){
         document.getElementsByTagName('section')[0].style.backgroundImage="url(유럽지도2.png)";
@@ -348,11 +292,21 @@
         map = 0;
     }
 
+      
     //renew 아이콘 누르면 초기화면으로 돌아옴
     document.getElementsByClassName('table-renew')[0].addEventListener('click',function(){
         renewMap();
     })
-
+     
+    //지도위 리그 아이콘 다 지우는 함수
+     function clearIcon(){
+        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
+    }
     //지도 위 아이콘 클릭하면 지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
         if(map==0){
