@@ -291,8 +291,17 @@ section{
     background-color: white;
     width: 620px;
     font-size: 23px;
-    
+    text-shadow: 2px 2px 5px black;
 }
+.stop-news{
+    padding: 5px;
+    border-radius: 6px;
+    cursor : pointer;
+}
+.stop-news:active{
+    background-color: #fafbfc;
+}
+
 .first-news{
     border-radius: 6px;
 }
@@ -354,6 +363,15 @@ section{
 .song-title{
     margin-top: 20px;
     text-align: center;
+}
+
+.stop-music{
+    padding: 5px;
+    border-radius: 6px;
+    cursor : pointer;
+}
+.stop-music:active{
+    background-color: #fafbfc;
 }
 
 .bottom-image{
@@ -444,12 +462,8 @@ footer{
 
 .info-body{
     width: 1150px;
-    height: 1300px;
+    height: 2050px;
     text-align: center;
-    
- 
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .info-box{
