@@ -232,6 +232,17 @@
 
 
  <script>
+    //안녕하세요 문구
+    // var userName = prompt("성함을 입력하세요", "홍길동");
+    // document.getElementById('user-name').innerHTML=userName+"님 안녕하세요"
+    
+    //안녕하세요 사라지게 하는 코드
+    // setTimeout(function(){
+    //   document.getElementById('user-name').innerHTML=""  
+    // },5000)
+
+    //지도상태 0,1인 경우로 나눔
+    //querySelectorAlll은 hover같은 css선택자의 가상 클래스도 가져올 수 있다. 
 
     var mode = 0 //일반모드
     //다크모드 코드
@@ -239,39 +250,49 @@
             if(mode==0){
                 document.getElementsByClassName('top-box')[0].style.backgroundColor="#333333";
                 document.body.style.backgroundColor="#333333";
-                document.getElementsByClassName('dark-title')[0].style.color="white";
-                document.getElementsByClassName('dark-title')[0].innerHTML="Light";
-                document.getElementsByClassName('main-title')[0].style.color="white";
-                document.getElementsByClassName('sign-in')[0].style.color="white";
-                document.getElementsByClassName('sign-up')[0].style.color="white";
-                document.getElementsByClassName('concrete-title')[0].style.color="white";
-                document.getElementsByClassName('ad-title')[0].style.color="white";
-                document.getElementsByClassName('song-title')[0].style.color="white";
-                document.getElementsByTagName('footer')[0].style.color="white";
+                document.getElementsByClassName('dark-title')[0].style.color="white"
+                document.getElementsByClassName('dark-title')[0].innerHTML="Light"
+                document.getElementsByClassName('main-title')[0].style.color="white"
+                document.getElementsByClassName('sign-in')[0].style.color="white"
+                document.getElementsByClassName('sign-up')[0].style.color="white"
+                
+                document.getElementsByClassName('concrete-title')[0].style.color="white"
+                document.getElementsByClassName('ad-title')[0].style.color="white"
+                document.getElementsByClassName('song-title')[0].style.color="white"
+                document.getElementsByTagName('footer')[0].style.color="white"
                 mode = 1;
             }
+
             else if(mode==1){
                 document.getElementsByClassName('top-box')[0].style.backgroundColor="#fafbfc";
                 document.body.style.backgroundColor="#fafbfc";
-                document.getElementsByClassName('dark-title')[0].style.color="black";
-                document.getElementsByClassName('dark-title')[0].innerHTML="Dark";
-                document.getElementsByClassName('main-title')[0].style.color="black";
-                document.getElementsByClassName('sign-in')[0].style.color="black";
-                document.getElementsByClassName('sign-up')[0].style.color="black";
-                document.getElementsByClassName('concrete-title')[0].style.color="black";
-                document.getElementsByClassName('ad-title')[0].style.color="black";
-                document.getElementsByClassName('song-title')[0].style.color="black";
-                document.getElementsByTagName('footer')[0].style.color="black";
+                document.getElementsByClassName('dark-title')[0].style.color="black"
+                document.getElementsByClassName('dark-title')[0].innerHTML="Dark"
+                document.getElementsByClassName('main-title')[0].style.color="black"
+                document.getElementsByClassName('sign-in')[0].style.color="black"
+                document.getElementsByClassName('sign-up')[0].style.color="black"
+                document.getElementsByClassName('concrete-title')[0].style.color="black"
+                document.getElementsByClassName('ad-title')[0].style.color="black"
+                document.getElementsByClassName('song-title')[0].style.color="black"
+                document.getElementsByTagName('footer')[0].style.color="black"
                 mode = 0;
             }
         });
 
 
-    
-
-
     //맵 버젼
     var map = 0;
+
+    //지도위 리그 아이콘 다 지우는 함수
+    function clearIcon(){
+        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
+        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
+    }
+
     //renew 함수
     function renewMap(){
         document.getElementsByTagName('section')[0].style.backgroundImage="url(유럽지도2.png)";
@@ -291,20 +312,12 @@
         document.getElementsByClassName('table-olympia')[0].style.backgroundImage="url()";
         map = 0;
     }
+
     //renew 아이콘 누르면 초기화면으로 돌아옴
     document.getElementsByClassName('table-renew')[0].addEventListener('click',function(){
         renewMap();
     })
-     
-    //지도위 리그 아이콘 다 지우는 함수
-     function clearIcon(){
-        document.getElementsByClassName('table-epl')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-laliga')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-bundes')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-serie')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-scotish')[0].style.backgroundImage="url()"
-        document.getElementsByClassName('table-greece')[0].style.backgroundImage="url()"
-    }
+
     //지도 위 아이콘 클릭하면 지도 바뀜
     document.getElementsByClassName('table-epl')[0].addEventListener('click',function(){
         if(map==0){
@@ -362,14 +375,15 @@
     
     
 
-    //아이콘에 마우스 올리면 details에 리그, 팀 관련 설명나옴, 떼면 사라짐
-    //아이콘에 마우스 올리면 마우스 포인터 변하고 박스에 그림자 효과 부여함 떼면 사라짐
-    //원래 hover를 썼는데 자바스크립트로 바꾼 이유는 맵이 변하면 표시되지 않는 아이콘의 hover효과가 사라지지 않아서
-    
     //details 지움
     function clearDetails(){
         document.getElementsByClassName('nav-box')[0].innerHTML=""
     }
+
+    //아이콘에 마우스 올리면 details에 리그, 팀 관련 설명나옴, 떼면 사라짐
+    //아이콘에 마우스 올리면 마우스 포인터 변하고 박스에 그림자 효과 부여함 떼면 사라짐
+    //원래 hover를 썼는데 자바스크립트로 바꾼 이유는 맵이 변하면 표시되지 않는 아이콘의 hover효과가 사라지지 않아서
+    
     //리그
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseover',function(){
         if(map==0){
@@ -575,11 +589,10 @@
             window.open('inbeom.html');
         }
     })
-    
-    
+
 
     //뉴스 화면전환 코드
-    var newsMoving = setInterval(function(){ 
+    function newsMove(){ 
         var now = new Date();
         if(now.getSeconds()%2==1){
             document.getElementsByClassName('first-news')[0].src="kanginnews.png"
@@ -593,30 +606,24 @@
             document.getElementsByClassName('second-news')[0].src="ohnews.png"
             document.getElementsByClassName('second-news-link')[0].href="http://sportsworldi.segye.com/newsView/20230528503499"
         }
-    },1000);
-
-    //뉴스 멈춤코드
+    }
+    var newsMoving = setInterval('newsMove()',1000);
+    var newsMode = 0;
+    //뉴스 멈춤, 재생코드
     function newsStop(){
+        if(newsMode==0){
             clearInterval(newsMoving);
+            document.getElementsByClassName('stop-news')[0].value="Move"
+            newsMode = 1;
+            
+        }else if(newsMode == 1){
+            newsMoving = setInterval('newsMove()',1000);
+            document.getElementsByClassName('stop-news')[0].value="Stop"
+            newsMode = 0;
+        }
     }
 
-    //광고배너 이미지전환코드
-    // setInterval(function(){
-    //     var now = new Date();
-    //     if(now.getSeconds()%2==0){
-    //         for(var i=0;i<3;i++){
-    //             document.getElementsByClassName('ad-image')[i].src="가천대광고2.png"
-    //             document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjM4OCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
-    //         }
-            
-    //     }
-    //     else{
-    //         for(i=0;i<3;i++){
-    //             document.getElementsByClassName('ad-image')[i].src="가천대광고1.png"
-    //             document.getElementById('ad-link').href="https://www.gachon.ac.kr/pr/1443/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGcHIlMkY0NjQlMkY4NjU0MCUyRmFydGNsVmlldy5kbyUzRg%3D%3D"
-    //         }
-    //     }
-    // }, 3000)
+    
 
 
     //광고 숨기기 기능
