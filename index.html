@@ -362,15 +362,14 @@
     
     
 
-    //details 지움
-    function clearDetails(){
-        document.getElementsByClassName('nav-box')[0].innerHTML=""
-    }
-
     //아이콘에 마우스 올리면 details에 리그, 팀 관련 설명나옴, 떼면 사라짐
     //아이콘에 마우스 올리면 마우스 포인터 변하고 박스에 그림자 효과 부여함 떼면 사라짐
     //원래 hover를 썼는데 자바스크립트로 바꾼 이유는 맵이 변하면 표시되지 않는 아이콘의 hover효과가 사라지지 않아서
     
+    //details 지움
+    function clearDetails(){
+        document.getElementsByClassName('nav-box')[0].innerHTML=""
+    }
     //리그
     document.getElementsByClassName('table-epl')[0].addEventListener('mouseover',function(){
         if(map==0){
