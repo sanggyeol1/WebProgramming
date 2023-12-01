@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>연습</title>
+</head>
+<body>
+    <h3>페이지 방문 초시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+    <hr>
+    <div id="clock"></div>
+</body>
+
+
+<script>
+    setInterval(function(){
+        var now = new Date();
+        document.getElementById('clock').innerHTML = now;
+        if(now.getSeconds()%2==0){
+            document.body.style.background="violet";
+        }
+        else{
+            document.body.style.background="lightskyblue";
+        }
+    },1000)
+</script>
+</html>

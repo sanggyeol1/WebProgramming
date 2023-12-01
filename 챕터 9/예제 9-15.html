@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #card{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h3>prac 15</h3>
+    <hr>
+    <img id="card" onwheel="wheel(event)" src="back.png">
+    
+    <script>
+        function wheel(e){
+            var cardWidth = parseInt(document.getElementById('card').style.width);
+            if(e.wheelDelta > 0){
+                cardWidth += 3;
+                document.getElementById('card').style.width = cardWidth + "px";
+            }
+            else if(e.wheelDelta < 0){
+                cardWidth -= 3;
+                document.getElementById('card').style.width = cardWidth + "px";
+            }
+        }
+    </script>
+</body>
+</html>

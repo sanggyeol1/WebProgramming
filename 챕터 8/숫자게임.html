@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var gameon = true;
+        var gameArray = [0,0,0,0];
+        var setArray = [0,0,0,0];
+        var count1 = 0;
+        var count2 = 0;
+        var count3 = 0;
+
+        function run(){
+            if(gameon==false)
+                return;
+
+            var n1 = Math.floor(Math.random()*3)+1
+            var n2 = Math.floor(Math.random()*3)+1
+            var n3 = Math.floor(Math.random()*3)+1
+            var n4 = Math.floor(Math.random()*3)+1
+
+
+            function run1(){
+                gameArray[0] = n1;
+                setArray[0] = 1;
+                document.getElementById('first').innerHTML=n1
+            }
+            function run2(){
+                gameArray[1] = n2;
+                setArray[1] = 1;
+                document.getElementById('second').innerHTML=n2
+            }
+            function run3(){
+                gameArray[2] = n3;
+                setArray[2] = 1;
+                document.getElementById('third').innerHTML=n3
+            }
+            function run4(){
+                gameArray[3] = n4;
+                setArray[3] = 1;
+                document.getElementById('fourth').innerHTML=n4
+            }
+            run1();
+            run2();
+            run3();
+            run4();
+
+                
+            // // 같은숫자면 색깔 같아지는 함수
+            // if(n==1){
+            //     obj.style.color="red";
+            // }
+            // else if(n==2){
+            //     obj.style.color="green";
+            // }
+            // else{
+            //     obj.style.color="black";
+            // }
+
+
+
+            
+
+            
+            
+
+            
+
+            if(setArray[0]==1 && setArray[1]==1 &&setArray[2]==1 &&
+                setArray[3]==1){
+                var divMsg = document.getElementById("msg");
+            
+                
+                // if(gameArray[0]==gameArray[1]&&
+                //     gameArray[1]==gameArray[2]&&
+                //     gameArray[2]==gameArray[3]){
+
+                    if(gameArray[0]==gameArray[1]==gameArray[2]==gameArray[3]){
+                        divMsg.innerHTML = "success(click here to do again)";
+                    }
+                    else{
+                        divMsg.innerHTML = "fail(click here to do again)";
+                    }
+                
+
+                    gameon = false;
+            }
+
+        
+        }
+
+
+        function reset(){
+            for (var i =0; i <gameArray.length; i++){
+                gameArray[i] = 0;
+                setArray[i] = 0;
+            }
+            document.getElementById("first").innerHTML = 0;
+            document.getElementById("first").style.color="blue";
+            document.getElementById("second").innerHTML = 0;
+            document.getElementById("second").style.color="blue";
+            document.getElementById("third").innerHTML = 0;
+            document.getElementById("third").style.color="blue";
+            document.getElementById("fourth").innerHTML = 0;
+            document.getElementById("fourth").style.color="blue";
+            
+            document.getElementById("msg").innerHTML = "";
+
+            gameon = true;
+        }
+
+    </script>
+    <head>
+
+        <style>
+            table{
+                border : 1px solid violet;
+                border-collapse: collapse;
+            }
+            td{
+                width : 50px;
+                height : 50px;
+                padding : 0px;
+                font : italic 50px consolas, sans-serif;
+                color : blue;
+                text-align : center;
+                background: linen;
+            }
+            div#msg{
+                font : italic 18px consolas, sans-serif;
+                color : magenta;
+                margin-top : 10px;
+            }
+        </style>
+
+        <title>숫자게임</title>
+    </head>
+    <body>
+        <h3>숫자게임</h3>
+        각 숫자를 클릭하면 1에서 3 사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.
+        <hr>
+        <table>
+            <tr>
+                <td id="first" onclick="gen(this)">0</td>
+                <td id="second" onclick="gen(this)">0</td>
+                <td id="third" onclick="gen(this)">0</td>
+                <td id="fourth" onclick="gen(this)">0</td>
+                
+                
+            </tr>
+        </table>
+        <div id="msg" onclick="reset()"></div>
+        <button onclick="run()">run</button> <button onclick="reset()">reset</button>
+    </body>
+</html>

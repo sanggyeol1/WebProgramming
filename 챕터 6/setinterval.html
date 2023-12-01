@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>setInterval 실습</title>
+</head>
+<body id="body">
+    <h3>페이지 방문 초시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+    <hr>
+    <div id="time"></div>
+
+
+    <script>
+
+        setInterval(function(){
+            var now = new Date(); //현재시간을 나타내는 변수인 now 선언
+            document.getElementById('time').innerHTML=now;
+            
+            if(now.getSeconds() %2 == 1){ //now는 너무 길기때문에 계산시간이 자꾸 뒤로 밀림! 그래서 now.getSeconds()를 받아와서 나머지를 구해주면 빠르게 배경이 바뀜!
+                document.getElementById('body').style.background="lightskyblue";
+            }
+            else{
+                document.getElementById('body').style.background="violet";
+            }
+        },1000)
+        
+    </script>
+</body>
+</html>
+
+

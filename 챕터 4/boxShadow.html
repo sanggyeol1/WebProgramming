@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box-shadow 만들기</title>
+        <style>
+            div{
+                width : 200px;
+                height : 140px;
+                background-size : 110px 140px;
+                padding :10px;
+                border : 10px solid lightgrey;
+            }
+            .first{
+                background-image : url("back.png");
+                box-shadow : 10px 10px red;
+            }
+            .second{
+                background-image : url("back.png");
+                box-shadow : 10px 10px 5px skyblue;
+            }
+            .third{
+                background-image : url("back.png");
+                box-shadow : 2px 2px 2px black,
+                0 0 25px blue, 0 0 5px darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>박스 그림자 만들기</h3>
+        <hr>
+        <div class="first">뚱이와 함께</div><br>
+        <div class="second">뚱이와 함께</div><br>
+        <div class="third">뚱이와 함께</div>
+    </body>
+</html>

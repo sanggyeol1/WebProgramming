@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>예제 1</title>
+<script>
+function over(obj){obj.src="media/1.png";}
+function out(obj){obj.src="media/back.png"}
+function over2(obj){obj.style.background="blue"; obj.style.color="white";}
+function out2(obj){obj.style.background="white"; obj.style.color="black";}
+</script>
+</head>
+<body>
+<h3>마우스를 올려 보세요(this 인스턴트를 사용하세요)</h3>
+<hr>
+<div 
+	onmouseover="over2(this)"
+	onmouseout="out2(this)"		>여기에 마우스를 올리면 배경색이 파란색으로 변하고 글자색이 하얀색으로 변합니다.</div>
+<h3>마우스를 그림에 올리면 그림이 변합니다 (this 인스턴트를 사용하세요)</h3>
+
+<img src="media/back.png" alt="이미지"
+	onmouseover="over(this)"
+	onmouseout="out(this)">
+</body>
+</html>
