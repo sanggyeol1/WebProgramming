@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>예제1</title>
+
+
+
+<script>
+function over(obj) {
+var ret=prompt("월화수목금토일 중에서 입력하세요, ");
+if(ret=="월요일"){document.write("월요일은 등교");}
+else if(ret=="화요일"){document.write("화요일은 등교");}
+else if(ret=="수요일"){document.write("수요일은 등교");}
+else if(ret=="목요일"){document.write("목요일은 등교");}
+else if(ret=="금요일"){document.write("금요일은 등교");}
+else if(ret=="토요일"){document.write("토요일은 쉬어");}
+else if(ret=="일요일"){document.write("일요일은 쉬어");}
+else{document.write("오류");}
+}
+function out(obj) {
+obj.src="media/apple.png";
+}
+
+</script>
+
+</head>
+<body>
+<h3>월화수목금토일중에서 선택하세요</h3>
+<hr>
+<p class="p">
+<hr>
+<img src="media/apple.png" alt="이미지" width="200px"
+onmouseover="over(this)"
+onmouseout="out(this)"
+</body>
+</html>
