@@ -1,0 +1,87 @@
+.box {
+  position : static; /* 기준이 엄서요 (좌표적용 불가) */
+  position : relative; /* 기준이 내 원래 위치요 */
+  position : absolute; /* 기준이 내 부모태그중애 position : relative 가진 부모 기준 */
+  position : fixed; /* 기준이 브라우저 창이요 (viewport) */
+
+  top : 100px;
+  left : -200px;
+}
+
+
+z-index : n;는 n이 높을수록 앞으로 옴
+
+
+
+box-sizing: border-box;는 width의 기준을 텍스트에서 박스(padding, border포함)으로 설정함 - >그래서 css에 div박스 전체에 box-sizing: border-box를 적용하고 시작하는게 편함
+
+즉, div {
+      box-sizing : border-box;
+    }
+    body {
+      margin : 0;
+    }
+    html {
+      line-height : 1.15; /*기본 행간 높이*/
+    }
+
+이외에도 브라우저 간에 호환성 등 미리 넣고 시작하면 편한 css는 normalize.css에 나온다
+
+
+input[type=text]{
+    padding : 10px;
+    font-size : 20px;
+    border : 2px solid black;
+    border-radius : 5px;
+};타입이 text인 input에만 걸림
+
+
+
+
+:any-link /*방문 전, 방문 후 링크 한번에 선택할 때*/
+:playing /*동영상, 음성이 재생중일 때*/
+:paused /*동영상, 음성이 정지시*/
+:autofill /*input의 자동채우기 스타일*/
+:disabled /*disabled된 요소 스타일*/
+:checked /*체크박스나 라디오버튼 체크되었을 때*/
+:blank /*input이 비었을 때*/
+:valid /*이메일 input 등에 이메일 형식이 맞을 경우*/
+:invalid /*이메일 input 등에 이메일 형식이 맞지 않을 경우*/
+:required /*필수로 입력해야할 input의 스타일*/
+:nth-child(n) /*n번째 자식 선택*/
+:first-child /*첫째 자식 선택*/
+:last-child /*마지막 자식 선택*/
+
+a:link { 
+  color : red; /*방문 전 링크*/ 
+} 
+a:visited { 
+  color : black; /*방문 후 링크*/ 
+} 
+
+
+OO css : 
+ex) 버튼의 뼈대와 살점을 분리하고 버튼에 클래스를 2개 이상 붙임
+
+google font를 사용하면 폰트 바꿀 수 있음
+
+
+.flex-container {
+  display : flex;
+  justify-content : center;  /* 좌우정렬 */
+  align-items : center;  /* 상하정렬 */
+  flex-direction : column; /* 세로정렬 */
+  flex-wrap : wrap;  /* 폭이 넘치는 요소 wrap 처리 */
+}
+.box {
+  flex-grow : 2;  /* 폭이 상대적으로 몇배인지 결정 */
+}
+
+
+좋은 부가기능 : beauty :  Format Document 코드정렬 알아서 해줌
+
+
+head에 
+파비콘 넣을 수 있음, 
+open graph를 통해서 링크 공유시 나타나는 사이트의 설명, 이미지를 설정 가능
+

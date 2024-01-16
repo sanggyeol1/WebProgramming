@@ -1,0 +1,128 @@
+.container{
+    width : 700px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.left-menu{
+
+    width : 70%;
+   
+    float: left;
+}
+
+.right-menu{
+    width: 30%;
+    float: left;
+}
+
+.profile-img{
+    width: 50px;
+    display: inline-block;
+}
+.item-img{
+    width:100%
+}
+.navbar > li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding : 10px;
+    border-radius : 6px
+}
+
+input{
+    box-sizing: border-box;
+}
+.enroll-form{
+    padding : 20px;
+    border-radius: 6px;
+    
+}
+
+.enroll-form input{
+    padding : 5px;
+    font-size : 20px;
+    border : 2px solid black;
+    border-radius : 5px;
+    margin: 4px;
+    
+}
+
+.first-name{
+    float: left;
+    width: 50%;
+    align-items:center;
+    
+}
+.last-name{
+    float: left;
+    width: 50%;
+}
+.email-input{
+    width : 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th{
+    padding : 5px;
+    border-bottom: 1px solid #c2d3de;
+    
+}
+table{
+    border-collapse : collapse;
+}
+
+div, input, textarea {
+    box-sizing : border-box;
+  }
+  body {
+    margin : 0;
+  }
+  html {
+    line-height : 1.15; /*기본 행간 높이*/
+  }
+
+
+.table-bg{
+    background: #c2d3de;
+    padding: 30px;
+}
+
+.main-table{
+    border-radius: 12px;
+    background: white;
+    width: 100%;
+}
+
+
+
+.main-table img{
+    width: 80px;
+    height: 60px;
+}
+
+.main-content{
+    
+    width: 80%;
+    margin: auto;
+}
+
+.choose-button{
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    background: yellow;
+}
+
+.input-test{
+    font-size : 20px
+}
+.input-test:focus{
+border: black;
+}
+
