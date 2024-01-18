@@ -8,6 +8,8 @@
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -38,12 +40,73 @@
             하지만 이 좌표속성을 사용하려면 position 속성이 필요합니다. position 속성은 좌표속성을 적용할 기준점이 여기에요~! 라고 지정해주는 역할입니다. </p>
     </div>
 
+    <!-- font-awsome -->
+    <div class="product-container">
 
-    <div class="flex-container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>Fast Shipping</h4>
+            <p>We ship faster than other shops</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-asia"></i>
+            <h4>Good Service</h4>
+            <p>Expect a lifelong service</p>
+        </div>
+
+
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <h4>Free Coupons</h4>
+            <p>With new welcome gifts</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-shirt"></i>
+            <h4>New Products</h4>
+            <p>See monthly new products</p>
+        </div>
+
     </div>
+
+
+    <div class="shop-bg">
+        <div class="shop-container">
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$60</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product1-1.jpg">
+                </div>
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$90</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product2.jpg">
+                </div>
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$70</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -71,7 +134,7 @@
                     <textarea class="form-input form-long"></textarea>
                 </div>
 
-                <div>
+                <div class="bottom-menu">
                     <input id="sub" type="checkbox">
                     <label for="sub">Subscribe</label>
                     <button class="yellow-button">SEND</button>
@@ -81,7 +144,16 @@
     </div>
 
 
+    
 
+    <div class="flex-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+    
 
 </body>
 
