@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-item">
+            <h3>Shoeshop</h3>
+        </div>
+
+        <div style="flex-grow : 1"></div>
+        <div class="nav-item">Products</div>
+        <div class="nav-item">Services</div>
+    </div>
+
+
+    <div class="main-background">
+        <h4 class="main-title">Buy Our Shoes!</h4>
+        <p class="main-content">우리의 신발을 당신의 라이프스타일에 적용해보세요 훨씬 편안하고 신나는 일상이 될 거에요! 많은 셀럽과 스타들이 우리의 신발을 착용하고 거리를 활보합니다.
+        </p>
+        <button class="main-button">
+            구매하기
+        </button>
+
+    </div>
+    <div class="explain-box">
+        <h4> How we design our shoes </h4>
+        <p> top, left, bottom, right 라는 속성을 사용하면
+            요소의 상하좌우 위치를 변경할 수 있습니다.
+            하지만 이 좌표속성을 사용하려면 position 속성이 필요합니다. position 속성은 좌표속성을 적용할 기준점이 여기에요~! 라고 지정해주는 역할입니다. </p>
+    </div>
+
+    <!-- font-awsome -->
+    <div class="product-container">
+
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>Fast Shipping</h4>
+            <p>We ship faster than other shops</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-asia"></i>
+            <h4>Good Service</h4>
+            <p>Expect a lifelong service</p>
+        </div>
+
+
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <h4>Free Coupons</h4>
+            <p>With new welcome gifts</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-shirt"></i>
+            <h4>New Products</h4>
+            <p>See monthly new products</p>
+        </div>
+
+    </div>
+
+    <!-- shadow dom -->
+    <div>
+        <label for="inputfile" style="font-size: 25px;">
+            <strong>사진선택하기</strong>
+        </label>
+        <input id="inputfile" type="file" style="display: none;">
+    </div>
+    <div>
+        <input placeholder="ddd">
+    </div>
+    <div><input type="range"></div>
+    <div>
+        <progress value="0.4"></progress>
+    </div>
+
+
+
+
+    <div class="shop-bg">
+        <div class="shop-container">
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$60</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product1-1.jpg">
+                </div>
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$90</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product2.jpg">
+                </div>
+            </div>
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+                        <div class="overlay-black">
+                            <div class="overlay-price">$70</div>
+                            <div class="overlay-ex">인기상품</div>
+                        </div>
+                    </div>
+                    <img src="img/product3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="form-background">
+        <div class="form-white">
+            <form>
+                <div class="w-100">
+                    <h3>Contact Us</h3>
+                    <p>Your Email</p>
+                    <input class="form-input" type="email" placeholder="email@example.com">
+                </div>
+                <div class="w-50">
+                    <p>First Name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div class="w-50">
+                    <p>Last Name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="w-100">
+                    <p>message</p>
+                    <textarea class="form-input form-long"></textarea>
+                </div>
+
+                <div class="bottom-menu">
+                    <input id="sub" type="checkbox">
+                    <label for="sub">Subscribe</label>
+                    <button class="yellow-button">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
