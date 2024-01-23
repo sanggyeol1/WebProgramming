@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.box-blue, .box-red, .box-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.box-green {
+  background: green;
+}
+
+.box-red {
+  background: red;
+}
+
+.box-blue {
+  background: blue;
+}
+
+.btn-blue, .btn-red, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn-blue {
+  color: blue;
+}
+
+.mainbg h4 {
+  color: red;
+}
+.mainbg button {
+  color: aliceblue;
+}
+
+.background {
+  background-color: #2a4cb2;
+  font-size: 14px;
+}
+
+.boxex {
+  color: #eeeeee;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -3px;
+}
+
+ul li {
+  padding: 10px;
+  list-style-type: none;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+ul .active {
+  background: rgb(75, 72, 227);
+  color: white;
+}
+ul :hover {
+  background: red;
+}
+
+.alert-bar-blue {
+  background: rgb(68, 68, 154);
+  width: 500px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.alert-bar-yellow {
+  background: rgb(167, 176, 83);
+  width: 500px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.alert-bar-green {
+  background: rgb(80, 181, 95);
+  width: 500px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+}
+.row .col-6 {
+  padding: 10px;
+  background: #eeeeee;
+  width: 50%;
+}
+.row .col-4 {
+  padding: 10px;
+  background: #eeeeee;
+  width: 33.3%;
+}
+.row .col-3 {
+  padding: 10px;
+  background: #eeeeee;
+  width: 25%;
+}/*# sourceMappingURL=test.css.map */

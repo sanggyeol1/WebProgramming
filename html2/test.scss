@@ -1,0 +1,148 @@
+@use 'reset'; //reset파일에 있는 모든 코드 import
+
+%box{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+.box-green{
+    @extend %box;
+    background: green;
+}
+.box-red{
+    @extend %box;
+    background: red;
+}
+.box-blue{
+    @extend %box;
+    background: blue;
+}
+
+
+%btn{//extend문법
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green{
+    @extend %btn;
+    color: green;
+}
+.btn-red{
+    @extend %btn;
+    color: red;
+}
+.btn-blue{
+    @extend %btn;
+    color: blue;
+}
+
+
+$메인칼라 : #2a4cb2;
+$서브칼라 : #eeeeee;
+$기본사이즈 : 16px;
+
+.mainbg{//nesting
+    h4{
+        color: red;
+    }
+    button{
+        color: aliceblue;
+    }
+}
+
+
+
+.background{
+    background-color: $메인칼라;
+    font-size: $기본사이즈 - 2px;
+}
+
+.boxex{
+    color: $서브칼라;
+    font-size: $기본사이즈 +2px;
+}
+
+
+
+
+
+//믹스인 문법
+@mixin font-style($var, $var2){
+    font-size : $var;
+    letter-spacing: $var2;
+}
+
+h2{
+    @include font-style(40px, -1px)
+}
+h3{
+    @include font-style(30px, -3px)
+}
+
+
+
+
+
+
+// 과제
+ul{
+    li{
+        padding: 10px;
+        list-style-type: none;
+        width: 300px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.1); 
+        
+    }
+    .active{
+        background: rgb(75, 72, 227);
+        color: white;
+        
+    }
+    :hover{
+        background: red;
+    }
+}
+
+
+@mixin alert-bar($var){
+    background : $var;
+    width: 500px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.alert-bar-blue{
+    @include alert-bar(rgb(68, 68, 154));
+}
+.alert-bar-yellow{
+    @include alert-bar(rgb(167, 176, 83));
+}
+.alert-bar-green{
+    @include alert-bar(rgb(80, 181, 95));
+}
+
+
+
+
+@mixin col-box($var){
+    padding : 10px;
+    background: #eeeeee;
+    width: $var;
+}
+.row{
+    display: flex;
+
+    .col-6{
+        @include col-box(50%);
+    }
+    .col-4{
+        @include col-box(33.3%);
+    }
+    .col-3{
+        @include col-box(25%);
+    }
+}
+
+
